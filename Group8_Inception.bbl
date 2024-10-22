@@ -85,6 +85,37 @@
       \verb 10.1109/TBME.2021.3065146
       \endverb
     \endentry
+    \entry{1467495}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=094486b9bf66b2d238e3937cc49fca84}{%
+           family={Fiala},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{fullhash}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{fullhashraw}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{bibnamehash}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{authorbibnamehash}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{authornamehash}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{authorfullhash}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{authorfullhashraw}{094486b9bf66b2d238e3937cc49fca84}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)}
+      \field{title}{ARTag, a fiducial marker system using digital techniques}
+      \field{volume}{2}
+      \field{year}{2005}
+      \field{pages}{590\bibrangedash 596 vol. 2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/CVPR.2005.74
+      \endverb
+      \keyw{Robustness;Forward error correction;Digital cameras;Detection algorithms;Augmented reality;Robotics and automation;Navigation;Robot vision systems;Codes;Joining processes}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
