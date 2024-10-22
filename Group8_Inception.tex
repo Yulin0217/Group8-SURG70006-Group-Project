@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage[colorlinks, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage[automake]{glossaries-extra}
+\usepackage{appendix}
+\usepackage{graphicx} % Needed for including images
+\usepackage{mdframed} % For creating framed boxes
+\usepackage[backend=biber, style=ieee]{biblatex} % Adding biblatex with IEEE style
+\usepackage{minted}
+
+\addbibresource{Reference.bib} % Specify the bibliography file, here 'references.bib'
+
+
+\makeglossaries % Initialize the glossary system
+
+% Define some terms
+ 
+\newglossaryentry{opencv}{
+    name=OpenCV,
+    description={OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage, then Itseez (which was later acquired by Intel). The library is cross-platform and licensed as free and open-source software under Apache License 2. Starting in 2011, OpenCV features GPU acceleration for real-time operations.\cite{1467495}}
+}
+
+
+% Define an acronym
+\newabbreviation{aes}{AES}{
+      Adaptive Exponential Smoothing\cite{9376657}}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+      \centering
+
+      \includegraphics[width=0.8\textwidth]{Imperial_College_London_new_logo.png} % Increased width
+      \vspace*{1cm}
+
+      \Large
+      SURG70006
+
+      \large
+      2024/10
+
+      \vspace{0.5cm}
+      \Huge
+      \textbf{Project 19: Surgical Robot Instrument Pose Estimation }
+
+      \vspace{1.5cm}
+
+
+      % Framed box for student information
+      \begin{mdframed}
+            \normalsize % Smaller text size within the box
+            \textbf{Group Number:} [Group 8]\\[20pt] % Name on the same line, add vertical space
+            \textbf{Group Members:} []\\[20pt] % ID on the same line, add vertical space
+            \textbf{Supervisor Name:} [Dr Stamatia (Matina) Giannarou] % Supervisor on the same line
+      \end{mdframed}
+
+      \vspace{2cm} % Adjust space as necessary
+      \Large
+      \textbf{DEPARTMENT OF}\\
+      \vspace{0.1cm} % Adjust line spacing
+      \textbf{Surgery and Cancer}
+
+      \vspace{4cm} % Large space as required
+      \large
+      Imperial College London\\
+      
+
+
+\end{titlepage}
+
+\newpage
+
+% Introduction & Background
+\section{Introduction \& Background}
+\gls{opencv}\gls{aes}
+
+\hyperref[sec:glossary]{Hyperlink to glossary} % Use the label in the hyperlink
+\section{Design \& Implementation}
+
+
+
+
+
+
+% References (The bibliography will be printed here)
+\printbibliography
+\printglossaries
+\label{sec:glossary}
+\end{document}
