@@ -2,7 +2,8 @@
 
 ## Instructions / 说明
 
-- *Find the "Group8_Inception" file, it's the updated PDF.*
+## *Check the "Group8_Inception" file, it's the updated PDF.*
+## 请查看"Group8_Inception"文件来检查最新的PDF更新
 
 - Please upload your files in **your own branch**.  
   请在**你自己的分支**中上传文件。
