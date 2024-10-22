@@ -2,6 +2,8 @@
 
 ## Instructions / 说明
 
+- *Find the "Group8_Inception" file, it's the updated PDF.*
+
 - Please upload your files in **your own branch**.  
   请在**你自己的分支**中上传文件。
 
