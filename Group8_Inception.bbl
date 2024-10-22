@@ -19,102 +19,148 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{9376657}{article}{}{}
-      \name{author}{8}{}{%
-        {{hash=ec8286be07bb27e6a07623cf8bfc8b71}{%
-           family={Kundrat},
-           familyi={K\bibinitperiod},
-           given={Dennis},
-           giveni={D\bibinitperiod}}}%
-        {{hash=8f041101b7913b7bfe18c72b1372a152}{%
-           family={Dagnino},
-           familyi={D\bibinitperiod},
-           given={Giulio},
-           giveni={G\bibinitperiod}}}%
-        {{hash=a74ce90907c8ecef99a889c3dc5d21bd}{%
-           family={Kwok},
-           familyi={K\bibinitperiod},
-           given={Trevor\bibnamedelimb M.\bibnamedelimi Y.},
-           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=dc66a9c1cb773bf0e8c03d1aea8464b4}{%
-           family={Abdelaziz},
-           familyi={A\bibinitperiod},
-           given={Mohamed\bibnamedelimb E.\bibnamedelimi M.\bibnamedelimi K.},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=a3c4a71ca93bfd652cc21525738a8550}{%
-           family={Chi},
+    \entry{enhancedmarker}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a632690b328a07dd951220f75f3897e8}{%
+           family={Cartucho},
            familyi={C\bibinitperiod},
-           given={Wenqiang},
-           giveni={W\bibinitperiod}}}%
-        {{hash=f480ed206a30d0a24ab31eb69169599c}{%
-           family={Nguyen},
-           familyi={N\bibinitperiod},
-           given={Anh},
-           giveni={A\bibinitperiod}}}%
-        {{hash=a774d5945ad278c6faf3750314d8dd00}{%
-           family={Riga},
-           familyi={R\bibinitperiod},
-           given={Celia},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4b97bc27071c590db26ea87fb05a4021}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chiyu},
            giveni={C\bibinitperiod}}}%
-        {{hash=fcdeef628f31c9c5305ee39311f1fcc6}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Guang-Zhong},
-           giveni={G\bibinithyphendelim Z\bibinitperiod}}}%
+        {{hash=bf005c3f4b9f0cde638a031c613a0515}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Baoru},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9eaeaf99335625647ab22efd7b25d8a1}{%
+           family={Elson},
+           familyi={E\bibinitperiod},
+           given={Dan\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fcf0c58bc302d6877e4b774444a94569}{%
+           family={Darzi},
+           familyi={D\bibinitperiod},
+           given={Ara},
+           giveni={A\bibinitperiod}}}%
+        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
+           family={Giannarou},
+           familyi={G\bibinitperiod},
+           given={Stamatia},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{0b555563ea1e8856a2a1720c81af066c}
-      \strng{fullhash}{4c24c2d4c8a29356c8492cf6eebac6b5}
-      \strng{fullhashraw}{4c24c2d4c8a29356c8492cf6eebac6b5}
-      \strng{bibnamehash}{0b555563ea1e8856a2a1720c81af066c}
-      \strng{authorbibnamehash}{0b555563ea1e8856a2a1720c81af066c}
-      \strng{authornamehash}{0b555563ea1e8856a2a1720c81af066c}
-      \strng{authorfullhash}{4c24c2d4c8a29356c8492cf6eebac6b5}
-      \strng{authorfullhashraw}{4c24c2d4c8a29356c8492cf6eebac6b5}
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
+      \strng{fullhash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{fullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{bibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authorbibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authornamehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
+      \strng{authorfullhash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authorfullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Biomedical Engineering}
-      \field{number}{10}
-      \field{title}{An MR-Safe Endovascular Robotic Platform: Design, Control, and Ex-Vivo Evaluation}
-      \field{volume}{68}
-      \field{year}{2021}
-      \field{pages}{3110\bibrangedash 3121}
-      \range{pages}{12}
+      \field{journaltitle}{Computer Methods in Biomechanics and Biomedical Engineering: Imaging \& Visualization}
+      \field{number}{4}
+      \field{title}{An enhanced marker pattern that achieves improved accuracy in surgical tool tracking}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{400\bibrangedash 408}
+      \range{pages}{9}
       \verb{doi}
-      \verb 10.1109/TBME.2021.3065146
+      \verb 10.1080/21681163.2021.1997647
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/21681163.2021.1997647
       \endverb
     \endentry
-    \entry{1467495}{inproceedings}{}{}
-      \name{author}{1}{}{%
-        {{hash=094486b9bf66b2d238e3937cc49fca84}{%
-           family={Fiala},
-           familyi={F\bibinitperiod},
-           given={M.},
+    \entry{10160287}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=d9f4c73d37da9be322d93b41cbc6c493}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Haozheng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=dc902654b1bed1c4b065f356670b8ae2}{%
+           family={Runciman},
+           familyi={R\bibinitperiod},
+           given={Mark},
            giveni={M\bibinitperiod}}}%
+        {{hash=a632690b328a07dd951220f75f3897e8}{%
+           family={Cartucho},
+           familyi={C\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a4814e6bba57339b3dd8391e2e32ff4f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chi},
+           giveni={C\bibinitperiod}}}%
+        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
+           family={Giannarou},
+           familyi={G\bibinitperiod},
+           given={Stamatia},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{094486b9bf66b2d238e3937cc49fca84}
-      \strng{fullhash}{094486b9bf66b2d238e3937cc49fca84}
-      \strng{fullhashraw}{094486b9bf66b2d238e3937cc49fca84}
-      \strng{bibnamehash}{094486b9bf66b2d238e3937cc49fca84}
-      \strng{authorbibnamehash}{094486b9bf66b2d238e3937cc49fca84}
-      \strng{authornamehash}{094486b9bf66b2d238e3937cc49fca84}
-      \strng{authorfullhash}{094486b9bf66b2d238e3937cc49fca84}
-      \strng{authorfullhashraw}{094486b9bf66b2d238e3937cc49fca84}
+      \strng{namehash}{2503cc67a8a414fff6ff61924400446a}
+      \strng{fullhash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{fullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{bibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authorbibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authornamehash}{2503cc67a8a414fff6ff61924400446a}
+      \strng{authorfullhash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authorfullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Graph-based Pose Estimation of Texture-less Surgical Tools for Autonomous Robot Control}
+      \field{year}{2023}
+      \field{pages}{2731\bibrangedash 2737}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICRA48891.2023.10160287
+      \endverb
+      \keyw{Shafts;Visualization;Pose estimation;Lighting;Soft robotics;Visual servoing;Real-time systems}
+    \endentry
+    \entry{surgripe2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d51a19e28d82fae78267a793da21a02b}{%
+           family={(SurgRIPE)},
+           familyi={(\bibinitperiod},
+           given={Surgical\bibnamedelimb Robot\bibnamedelimb Instrument\bibnamedelimb Pose\bibnamedelima Estimation},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{fullhash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{fullhashraw}{d51a19e28d82fae78267a793da21a02b}
+      \strng{bibnamehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authorbibnamehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authornamehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authorfullhash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authorfullhashraw}{d51a19e28d82fae78267a793da21a02b}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)}
-      \field{title}{ARTag, a fiducial marker system using digital techniques}
-      \field{volume}{2}
-      \field{year}{2005}
-      \field{pages}{590\bibrangedash 596 vol. 2}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1109/CVPR.2005.74
-      \endverb
-      \keyw{Robustness;Forward error correction;Digital cameras;Detection algorithms;Augmented reality;Robotics and automation;Navigation;Robot vision systems;Codes;Joining processes}
+      \field{howpublished}{Synapse Project, SynID: syn51471789. Available: \url{https://www.synapse.org/Synapse:syn51471789/wiki/622255}}
+      \field{note}{Accessed: 2024-10-22}
+      \field{title}{Surgical Robot Instrument Pose Estimation (SurgRIPE)}
+      \field{year}{2024}
     \endentry
   \enddatalist
 \endrefsection

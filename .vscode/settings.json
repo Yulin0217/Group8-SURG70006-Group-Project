@@ -8,11 +8,9 @@
 
     "latex-workshop.latex.recipes": [
         {
-            "name": "lualatex -> biber -> lualatex",
+            "name": "latexmk (lualatex + biber + shell-escape)",
             "tools": [
-                "lualatex",
-                "biber",
-                "lualatex"
+                "latexmk"
             ]
         }
     ],
@@ -34,6 +32,18 @@
             "command": "biber",
             "args": [
                 "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-pdf",
+                "-lualatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "%DOC%"
             ]
         }
     ]

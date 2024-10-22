@@ -1,9 +1,12 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
-\glsgroupheading{A}\relax \glsresetentrylist %
-\glossentry{aes}{\glossaryentrynumbers{\relax 
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{6dof}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
-\glsgroupheading{O}\relax \glsresetentrylist %
-\glossentry{opencv}{\glossaryentrynumbers{\relax 
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{davinci}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossentry{rmis}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}}}%
 \end{theglossary}\glossarypostamble

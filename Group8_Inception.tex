@@ -15,16 +15,23 @@
 \makeglossaries % Initialize the glossary system
 
 % Define some terms
- 
-\newglossaryentry{opencv}{
-    name=OpenCV,
-    description={OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage, then Itseez (which was later acquired by Intel). The library is cross-platform and licensed as free and open-source software under Apache License 2. Starting in 2011, OpenCV features GPU acceleration for real-time operations.\cite{1467495}}
+
+
+\newglossaryentry{davinci}{
+    name= da Vinci platform,
+    description={ The da Vinci system is composed of three primary components: the patient-side cart, the surgeon console, and the vision cart. Notably, the da Vinci SP and da Vinci 5 systems stand out for offering seven degree-of-freedom (DOF) through their wristed instruments, whereas the da Vinci Xi system utilizes five DOF. The surgeon console, positioned a short distance away from the operating table, enables the surgeon to manipulate the surgical instruments and camera. The purpose of the vision cart is to provide reliable and intuitive control over the instruments, offer six DOF in terms of dexterity, and deliver immersive three-dimensional (3D) visualization. }
 }
 
 
+\newabbreviation{rmis}{RMIS}{
+      Robot-assisted minimally invasive surgery}
+
+\newabbreviation{6dof}{6DoF}{
+      Six Degrees of Freedom}
+
+
 % Define an acronym
-\newabbreviation{aes}{AES}{
-      Adaptive Exponential Smoothing\cite{9376657}}
+
 
 
 
@@ -77,16 +84,28 @@
 \newpage
 
 % Introduction & Background
-\section{Introduction \& Background}
-\gls{opencv}\gls{aes}
+\section{Introduction}
+\subsection{Problem Statement}
+\gls{rmis} has come significantly in the last decade due to advances in surgical robotics such as artificial intelligence and the \gls{davinci}. Pose estimation of surgical instruments has become an important task in \gls{rmis}. 
+Nowadays there are many external devices like depth camera, electromagnetic trackers etc. available for space estimation in surgical instruments but they are not practical in in vivo surgeries because of space and hardware constraints\cite{enhancedmarker}. There are some vision-based methods that use external markers to track the instruments. However, these methods have major limitations; the markers must always be visible in the camera's field of view and are sensitive to background changes and occlusions\cite{10160287}. In this case, a vision-based markerless instrument tracking method that does not require any modifications to the hardware setup or external markers is necessary. The main aim of this project is to develop a deep learning based markerless \gls{6dof} surgical instrument pose estimation system. The system will be designed to provide highly accurate surgical instrument \gls{6dof} estimation without relying on external markers or complex hardware.
 
-\hyperref[sec:glossary]{Hyperlink to glossary} % Use the label in the hyperlink
-\section{Design \& Implementation}
+\begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{6Dof.png}
+            \caption{\gls{6dof} surgical instrument pose estimation with (left) and without occlusion (right). \cite{surgripe2024}}
+      \end{figure}
 
 
+\section{Related Work}
 
 
+\section{Proposed Methodlogy}
 
+
+\section{Goals and Objectives}
+
+
+\section{Risk Assessment}
 
 % References (The bibliography will be printed here)
 \printbibliography

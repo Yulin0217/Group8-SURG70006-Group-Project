@@ -1,3 +1,7 @@
-\contentsline {section}{\numberline {1}Introduction \& Background}{2}{section.1}%
-\contentsline {section}{\numberline {2}Design \& Implementation}{2}{section.2}%
-\contentsline {section}{Glossary}{2}{section*.3}%
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Problem Statement}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Related Work}{3}{section.2}%
+\contentsline {section}{\numberline {3}Proposed Methodlogy}{3}{section.3}%
+\contentsline {section}{\numberline {4}Goals and Objectives}{3}{section.4}%
+\contentsline {section}{\numberline {5}Risk Assessment}{3}{section.5}%
+\contentsline {section}{Glossary}{3}{section*.3}%
