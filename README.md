@@ -8,8 +8,8 @@
 - You can check the LaTeX PDF updates in the **"latex" branch**.  
   你可以在 **"latex" 分支**中查看 LaTeX PDF 更新。
 
-- **Important**: If you upload documents and wish to see the PDF version updated, please notify me.  
-  **重要**：如果你上传了文件并希望看到 PDF 版本的更新，请通知我。
+- **Important**: If you upload documents, I will receive an email notification and update the PDF as soon as possible.  
+  **重要**：如果你上传了文件，我会收到邮件通知并尽快进行 PDF 更新。
 
 - Please list the articles you have referenced and specify the **citation positions** in the text. If possible, provide the corresponding **.bib** file.  
   请列明所引用的文章及其在文中**引用**的位置，如果可以，请提供对应的 **.bib** 文件。
