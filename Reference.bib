@@ -1,3 +1,23 @@
+@article{10.1007/s11263-008-0152-6,
+  author     = {Lepetit, Vincent and Moreno-Noguer, Francesc and Fua, Pascal},
+  title      = {EPnP: An Accurate O(n) Solution to the PnP Problem},
+  year       = {2009},
+  issue_date = {February 2009},
+  publisher  = {Kluwer Academic Publishers},
+  address    = {USA},
+  volume     = {81},
+  number     = {2},
+  issn       = {0920-5691},
+  url        = {https://doi.org/10.1007/s11263-008-0152-6},
+  doi        = {10.1007/s11263-008-0152-6},
+  abstract   = {We propose a non-iterative solution to the P n P problem--the estimation of the pose of a calibrated camera from n 3D-to-2D point correspondences--whose computational complexity grows linearly with n . This is in contrast to state-of-the-art methods that are O ( n 5) or even O ( n 8), without being more accurate. Our method is applicable for all n 4 and handles properly both planar and non-planar configurations. Our central idea is to express the n 3D points as a weighted sum of four virtual control points. The problem then reduces to estimating the coordinates of these control points in the camera referential, which can be done in O ( n ) time by expressing these coordinates as weighted sum of the eigenvectors of a 12 12 matrix and solving a small constant number of quadratic equations to pick the right weights. Furthermore, if maximal precision is required, the output of the closed-form solution can be used to initialize a Gauss-Newton scheme, which improves accuracy with negligible amount of additional time. The advantages of our method are demonstrated by thorough testing on both synthetic and real-data.},
+  journal    = {Int. J. Comput. Vision},
+  month      = feb,
+  pages      = {155–166},
+  numpages   = {12},
+  keywords   = {Pose estimation, Perspective-n-Point, Absolute orientation}
+}
+
 @inproceedings{10160287,
   author    = {Xu, Haozheng and Runciman, Mark and Cartucho, João and Xu, Chi and Giannarou, Stamatia},
   booktitle = {2023 IEEE International Conference on Robotics and Automation (ICRA)},
@@ -8,6 +28,44 @@
   pages     = {2731-2737},
   keywords  = {Shafts;Visualization;Pose estimation;Lighting;Soft robotics;Visual servoing;Real-time systems},
   doi       = {10.1109/ICRA48891.2023.10160287}
+}
+
+@inproceedings{10160287,
+  author    = {Xu, Haozheng and Runciman, Mark and Cartucho, João and Xu, Chi and Giannarou, Stamatia},
+  booktitle = {2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {Graph-based Pose Estimation of Texture-less Surgical Tools for Autonomous Robot Control},
+  year      = {2023},
+  volume    = {},
+  number    = {},
+  pages     = {2731-2737},
+  keywords  = {Shafts;Visualization;Pose estimation;Lighting;Soft robotics;Visual servoing;Real-time systems},
+  doi       = {10.1109/ICRA48891.2023.10160287}
+}
+
+@article{8822749,
+  author   = {Sorriento, Angela and Porfido, Maria Bianca and Mazzoleni, Stefano and Calvosa, Giuseppe and Tenucci, Miria and Ciuti, Gastone and Dario, Paolo},
+  journal  = {IEEE Reviews in Biomedical Engineering},
+  title    = {Optical and Electromagnetic Tracking Systems for Biomedical Applications: A Critical Review on Potentialities and Limitations},
+  year     = {2020},
+  volume   = {13},
+  number   = {},
+  pages    = {212-232},
+  keywords = {Adaptive optics;Optical imaging;Biomedical optical imaging;Target tracking;Electromagnetics;Surgery;Optical sensors;Optical tracking;electromagnetic tracking;image-guided surgery;minimally invasive surgery;surgical navigation systems},
+  doi      = {10.1109/RBME.2019.2939091}
+}
+
+@article{app9030546,
+  author         = {Bai, Long and Yang, Jianxing and Chen, Xiaohong and Jiang, Pei and Liu, Fuqiang and Zheng, Fan and Sun, Yuanxi},
+  title          = {Solving the Time-Varying Inverse Kinematics Problem for the Da Vinci Surgical Robot},
+  journal        = {Applied Sciences},
+  volume         = {9},
+  year           = {2019},
+  number         = {3},
+  article-number = {546},
+  url            = {https://www.mdpi.com/2076-3417/9/3/546},
+  issn           = {2076-3417},
+  abstract       = {A dialytic-elimination and Newton-iteration based quasi-analytic inverse kinematics approach is proposed for the 6 degree of freedom (DOF) active slave manipulator in the Da Vinci surgical robot and other similar systems. First, the transformation matrix-based inverse kinematics model is derived; then, its high-dimensional nonlinear equations are transformed to a high-order nonlinear equation with only one unknown variable by using the dialytic elimination with a unitary matrix. Finally, the quasi-analytic solution is eventually obtained by the Newton iteration method. Simulations are conducted, and the result show that the proposed quasi-analytic approach has advantages in terms of accuracy (error < 0.00004 degree (or mm)), solution speed (<20 ms) and is barely affected by the singularity during intermediate calculations, which proves that the approach meets the real-time and high-accuracy requirements of master–slave mapping control for the Da Vinci surgical robots and other similar systems. In addition, the proposed approach can also serve as a design reference for other types of robotic arms that do not satisfy the Pieper principle.},
+  doi            = {10.3390/app9030546}
 }
 
 @article{ASADIZEIDABADI202460,
@@ -39,12 +97,38 @@
   eprint    = {https://doi.org/10.1080/21681163.2021.1997647}
 }
 
+
+@article{Fischler1981RandomSC,
+  title   = {Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography},
+  author  = {Martin A. Fischler and Robert C. Bolles},
+  journal = {Commun. ACM},
+  year    = {1981},
+  volume  = {24},
+  pages   = {381-395},
+  url     = {https://api.semanticscholar.org/CorpusID:972888}
+}
+
+@article{Lu_2018,
+  doi       = {10.1088/1742-6596/1087/5/052009},
+  url       = {https://dx.doi.org/10.1088/1742-6596/1087/5/052009},
+  year      = {2018},
+  month     = {sep},
+  publisher = {IOP Publishing},
+  volume    = {1087},
+  number    = {5},
+  pages     = {052009},
+  author    = {Xiao Xin Lu},
+  title     = {A Review of Solutions for Perspective-n-Point Problem in Camera Pose Estimation},
+  journal   = {Journal of Physics: Conference Series},
+  abstract  = {As there is a rapid development of robotics in the field of automation engineering, ego-motion estimation has become a most challenging task. In this review, we presented a model to help describe the PnP problems, and introduced two most common solutions. The P3P solution is the smallest subset of control points that yields a finite number of solutions. The EPnP solution is to reduce the complexity by expressing the n 3D points as a weighted sum of four virtual control points. The former solution is widely applied while there are 3 pairs of corresponding points in the problem. However, in most real cases, the latter is more used.}
+}
+
 @misc{surgripe2024,
-  author    = {Surgical Robot Instrument Pose Estimation (SurgRIPE)},
-  title     = {Surgical Robot Instrument Pose Estimation (SurgRIPE)},
+  author       = {Surgical Robot Instrument Pose Estimation (SurgRIPE)},
+  title        = {Surgical Robot Instrument Pose Estimation (SurgRIPE)},
   howpublished = {Synapse Project, SynID: syn51471789. Available: \url{https://www.synapse.org/Synapse:syn51471789/wiki/622255}},
-  year      = {2024},
-  note      = {Accessed: 2024-10-22}
+  year         = {2024},
+  note         = {Accessed: 2024-10-22}
 }
 
 

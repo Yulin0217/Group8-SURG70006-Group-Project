@@ -1,7 +1,19 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Problem Statement}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Related Work}{3}{section.2}%
-\contentsline {section}{\numberline {3}Proposed Methodlogy}{3}{section.3}%
-\contentsline {section}{\numberline {4}Goals and Objectives}{3}{section.4}%
-\contentsline {section}{\numberline {5}Risk Assessment}{3}{section.5}%
-\contentsline {section}{Glossary}{3}{section*.3}%
+\contentsline {subsection}{\numberline {1.1}Minimally invasive surgery and Robotic surgery}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Engineering Background}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}DoF of da Vinci Surgical Robot}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Difficulties of Surgical Tools Tracking}{2}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Limitations of OTS and EMTS}{2}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Vision-based Methods}{2}{subsubsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.3}Clinical aspects(TBD)}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Problem Statement}{3}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Related Work}{4}{section.2}%
+\contentsline {section}{\numberline {3}Proposed Methodlogy}{4}{section.3}%
+\contentsline {section}{\numberline {4}Goals and Objectives}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Objectives of the project}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Hardware and software requirements(TBD)}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Risk Assessment}{5}{section.5}%
+\contentsline {section}{\numberline {6}Project Timeline}{6}{section.6}%
+\contentsline {section}{\numberline {7}Project Management}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Progress Monitoring}{6}{subsection.7.1}%
+\contentsline {section}{Glossary}{7}{section*.3}%

@@ -19,72 +19,71 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{enhancedmarker}{article}{}{}
-      \name{author}{6}{}{%
-        {{hash=a632690b328a07dd951220f75f3897e8}{%
-           family={Cartucho},
-           familyi={C\bibinitperiod},
-           given={João},
+    \entry{app9030546}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=d307184b87e1d74270b6b91269307bbf}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b87dda8932a60161195dedf17e427f44}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jianxing},
            giveni={J\bibinitperiod}}}%
-        {{hash=4b97bc27071c590db26ea87fb05a4021}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Chiyu},
-           giveni={C\bibinitperiod}}}%
-        {{hash=bf005c3f4b9f0cde638a031c613a0515}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Baoru},
-           giveni={B\bibinitperiod}}}%
-        {{hash=9eaeaf99335625647ab22efd7b25d8a1}{%
-           family={Elson},
-           familyi={E\bibinitperiod},
-           given={Dan\bibnamedelima S.},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=fcf0c58bc302d6877e4b774444a94569}{%
-           family={Darzi},
-           familyi={D\bibinitperiod},
-           given={Ara},
-           giveni={A\bibinitperiod}}}%
-        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
-           family={Giannarou},
-           familyi={G\bibinitperiod},
-           given={Stamatia},
-           giveni={S\bibinitperiod}}}%
+        {{hash=eaefa8dd180971cfee840787cf3b798b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaohong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=93b5221c1611f3666667edd5e304f178}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Pei},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9f8497029902ebf2897108cba1b1ed07}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Fuqiang},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4eedbd345308da21aae807d267166163}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=36ee1cd57926a4f9fe3f7c6c7e538ea1}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Yuanxi},
+           giveni={Y\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
-      \strng{fullhash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{fullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{bibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{authorbibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{authornamehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
-      \strng{authorfullhash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{authorfullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{namehash}{e46b91938e2e24ca7941edb92cc8880c}
+      \strng{fullhash}{f8f91ff76f4a98c7cfa16f726c4a739a}
+      \strng{fullhashraw}{f8f91ff76f4a98c7cfa16f726c4a739a}
+      \strng{bibnamehash}{e46b91938e2e24ca7941edb92cc8880c}
+      \strng{authorbibnamehash}{e46b91938e2e24ca7941edb92cc8880c}
+      \strng{authornamehash}{e46b91938e2e24ca7941edb92cc8880c}
+      \strng{authorfullhash}{f8f91ff76f4a98c7cfa16f726c4a739a}
+      \strng{authorfullhashraw}{f8f91ff76f4a98c7cfa16f726c4a739a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Computer Methods in Biomechanics and Biomedical Engineering: Imaging \& Visualization}
-      \field{number}{4}
-      \field{title}{An enhanced marker pattern that achieves improved accuracy in surgical tool tracking}
-      \field{volume}{10}
-      \field{year}{2022}
-      \field{pages}{400\bibrangedash 408}
-      \range{pages}{9}
+      \field{abstract}{A dialytic-elimination and Newton-iteration based quasi-analytic inverse kinematics approach is proposed for the 6 degree of freedom (DOF) active slave manipulator in the Da Vinci surgical robot and other similar systems. First, the transformation matrix-based inverse kinematics model is derived; then, its high-dimensional nonlinear equations are transformed to a high-order nonlinear equation with only one unknown variable by using the dialytic elimination with a unitary matrix. Finally, the quasi-analytic solution is eventually obtained by the Newton iteration method. Simulations are conducted, and the result show that the proposed quasi-analytic approach has advantages in terms of accuracy (error < 0.00004 degree (or mm)), solution speed (<20 ms) and is barely affected by the singularity during intermediate calculations, which proves that the approach meets the real-time and high-accuracy requirements of master–slave mapping control for the Da Vinci surgical robots and other similar systems. In addition, the proposed approach can also serve as a design reference for other types of robotic arms that do not satisfy the Pieper principle.}
+      \field{issn}{2076-3417}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{3}
+      \field{title}{Solving the Time-Varying Inverse Kinematics Problem for the Da Vinci Surgical Robot}
+      \field{volume}{9}
+      \field{year}{2019}
       \verb{doi}
-      \verb 10.1080/21681163.2021.1997647
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \verb 10.3390/app9030546
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \verb https://www.mdpi.com/2076-3417/9/3/546
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \verb https://www.mdpi.com/2076-3417/9/3/546
       \endverb
     \endentry
     \entry{10160287}{inproceedings}{}{}
@@ -137,6 +136,272 @@
       \endverb
       \keyw{Shafts;Visualization;Pose estimation;Lighting;Soft robotics;Visual servoing;Real-time systems}
     \endentry
+    \entry{8822749}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=5ca31469915c45ce05cbff478707b734}{%
+           family={Sorriento},
+           familyi={S\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1e26651462b7bcb81754acfa196e13d8}{%
+           family={Porfido},
+           familyi={P\bibinitperiod},
+           given={Maria\bibnamedelima Bianca},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=9a6786976d5a678612a63d7817d2d2b5}{%
+           family={Mazzoleni},
+           familyi={M\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=78efb94cb7054035973aff975e2d17c1}{%
+           family={Calvosa},
+           familyi={C\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4922eb72c8ed6f7f89b074ba5c0fa059}{%
+           family={Tenucci},
+           familyi={T\bibinitperiod},
+           given={Miria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=40ee487e8e3f6cf3657bdf7f5325e332}{%
+           family={Ciuti},
+           familyi={C\bibinitperiod},
+           given={Gastone},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6583d85df524b0836c2a68830b29038a}{%
+           family={Dario},
+           familyi={D\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5db9c0911d12ac29b14ac94cdbb87450}
+      \strng{fullhash}{44be3e9cfb2a6289a52d75606bf8d407}
+      \strng{fullhashraw}{44be3e9cfb2a6289a52d75606bf8d407}
+      \strng{bibnamehash}{5db9c0911d12ac29b14ac94cdbb87450}
+      \strng{authorbibnamehash}{5db9c0911d12ac29b14ac94cdbb87450}
+      \strng{authornamehash}{5db9c0911d12ac29b14ac94cdbb87450}
+      \strng{authorfullhash}{44be3e9cfb2a6289a52d75606bf8d407}
+      \strng{authorfullhashraw}{44be3e9cfb2a6289a52d75606bf8d407}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Reviews in Biomedical Engineering}
+      \field{title}{Optical and Electromagnetic Tracking Systems for Biomedical Applications: A Critical Review on Potentialities and Limitations}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{212\bibrangedash 232}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1109/RBME.2019.2939091
+      \endverb
+      \keyw{Adaptive optics;Optical imaging;Biomedical optical imaging;Target tracking;Electromagnetics;Surgery;Optical sensors;Optical tracking;electromagnetic tracking;image-guided surgery;minimally invasive surgery;surgical navigation systems}
+    \endentry
+    \entry{Fischler1981RandomSC}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=53af7a5ea8715d6c3922933be034062f}{%
+           family={Fischler},
+           familyi={F\bibinitperiod},
+           given={Martin\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=40bae40d0cc01a890e3631288dd8ffa2}{%
+           family={Bolles},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd6cd035a6e3f6ec978ad866925826c7}
+      \strng{fullhash}{fd6cd035a6e3f6ec978ad866925826c7}
+      \strng{fullhashraw}{fd6cd035a6e3f6ec978ad866925826c7}
+      \strng{bibnamehash}{fd6cd035a6e3f6ec978ad866925826c7}
+      \strng{authorbibnamehash}{fd6cd035a6e3f6ec978ad866925826c7}
+      \strng{authornamehash}{fd6cd035a6e3f6ec978ad866925826c7}
+      \strng{authorfullhash}{fd6cd035a6e3f6ec978ad866925826c7}
+      \strng{authorfullhashraw}{fd6cd035a6e3f6ec978ad866925826c7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Commun. ACM}
+      \field{title}{Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography}
+      \field{volume}{24}
+      \field{year}{1981}
+      \field{pages}{381\bibrangedash 395}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:972888
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:972888
+      \endverb
+    \endentry
+    \entry{Lu_2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9d46f7f4eac5528d26b952581e9f9deb}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Xiao\bibnamedelima Xin},
+           giveni={X\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{9d46f7f4eac5528d26b952581e9f9deb}
+      \strng{fullhash}{9d46f7f4eac5528d26b952581e9f9deb}
+      \strng{fullhashraw}{9d46f7f4eac5528d26b952581e9f9deb}
+      \strng{bibnamehash}{9d46f7f4eac5528d26b952581e9f9deb}
+      \strng{authorbibnamehash}{9d46f7f4eac5528d26b952581e9f9deb}
+      \strng{authornamehash}{9d46f7f4eac5528d26b952581e9f9deb}
+      \strng{authorfullhash}{9d46f7f4eac5528d26b952581e9f9deb}
+      \strng{authorfullhashraw}{9d46f7f4eac5528d26b952581e9f9deb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As there is a rapid development of robotics in the field of automation engineering, ego-motion estimation has become a most challenging task. In this review, we presented a model to help describe the PnP problems, and introduced two most common solutions. The P3P solution is the smallest subset of control points that yields a finite number of solutions. The EPnP solution is to reduce the complexity by expressing the n 3D points as a weighted sum of four virtual control points. The former solution is widely applied while there are 3 pairs of corresponding points in the problem. However, in most real cases, the latter is more used.}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{A Review of Solutions for Perspective-n-Point Problem in Camera Pose Estimation}
+      \field{volume}{1087}
+      \field{year}{2018}
+      \field{pages}{052009}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/1087/5/052009
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-6596/1087/5/052009
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-6596/1087/5/052009
+      \endverb
+    \endentry
+    \entry{10.1007/s11263-008-0152-6}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7187819964d2d08695068a3f668e2ed1}{%
+           family={Lepetit},
+           familyi={L\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=7ed44f3258cf3a4902d1da8f7b547651}{%
+           family={Moreno-Noguer},
+           familyi={M\bibinithyphendelim N\bibinitperiod},
+           given={Francesc},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c5304d4d3b616054451f1a8db2a3974f}{%
+           family={Fua},
+           familyi={F\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Kluwer Academic Publishers}%
+      }
+      \strng{namehash}{bb9455529fc7550eb3834423674e055e}
+      \strng{fullhash}{bb9455529fc7550eb3834423674e055e}
+      \strng{fullhashraw}{bb9455529fc7550eb3834423674e055e}
+      \strng{bibnamehash}{bb9455529fc7550eb3834423674e055e}
+      \strng{authorbibnamehash}{bb9455529fc7550eb3834423674e055e}
+      \strng{authornamehash}{bb9455529fc7550eb3834423674e055e}
+      \strng{authorfullhash}{bb9455529fc7550eb3834423674e055e}
+      \strng{authorfullhashraw}{bb9455529fc7550eb3834423674e055e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a non-iterative solution to the P n P problem--the estimation of the pose of a calibrated camera from n 3D-to-2D point correspondences--whose computational complexity grows linearly with n . This is in contrast to state-of-the-art methods that are O ( n 5) or even O ( n 8), without being more accurate. Our method is applicable for all n 4 and handles properly both planar and non-planar configurations. Our central idea is to express the n 3D points as a weighted sum of four virtual control points. The problem then reduces to estimating the coordinates of these control points in the camera referential, which can be done in O ( n ) time by expressing these coordinates as weighted sum of the eigenvectors of a 12 12 matrix and solving a small constant number of quadratic equations to pick the right weights. Furthermore, if maximal precision is required, the output of the closed-form solution can be used to initialize a Gauss-Newton scheme, which improves accuracy with negligible amount of additional time. The advantages of our method are demonstrated by thorough testing on both synthetic and real-data.}
+      \field{issn}{0920-5691}
+      \field{journaltitle}{Int. J. Comput. Vision}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{EPnP: An Accurate O(n) Solution to the PnP Problem}
+      \field{volume}{81}
+      \field{year}{2009}
+      \field{pages}{155\bibrangedash 166}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s11263-008-0152-6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11263-008-0152-6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11263-008-0152-6
+      \endverb
+      \keyw{Pose estimation,Perspective-n-Point,Absolute orientation}
+    \endentry
+    \entry{enhancedmarker}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a632690b328a07dd951220f75f3897e8}{%
+           family={Cartucho},
+           familyi={C\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4b97bc27071c590db26ea87fb05a4021}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chiyu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bf005c3f4b9f0cde638a031c613a0515}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Baoru},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9eaeaf99335625647ab22efd7b25d8a1}{%
+           family={Elson},
+           familyi={E\bibinitperiod},
+           given={Dan\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fcf0c58bc302d6877e4b774444a94569}{%
+           family={Darzi},
+           familyi={D\bibinitperiod},
+           given={Ara},
+           giveni={A\bibinitperiod}}}%
+        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
+           family={Giannarou},
+           familyi={G\bibinitperiod},
+           given={Stamatia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
+      \strng{fullhash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{fullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{bibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authorbibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authornamehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
+      \strng{authorfullhash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authorfullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Methods in Biomechanics and Biomedical Engineering: Imaging \& Visualization}
+      \field{number}{4}
+      \field{title}{An enhanced marker pattern that achieves improved accuracy in surgical tool tracking}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{400\bibrangedash 408}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/21681163.2021.1997647
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \endverb
+    \endentry
     \entry{surgripe2024}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=d51a19e28d82fae78267a793da21a02b}{%
@@ -153,8 +418,8 @@
       \strng{authornamehash}{d51a19e28d82fae78267a793da21a02b}
       \strng{authorfullhash}{d51a19e28d82fae78267a793da21a02b}
       \strng{authorfullhashraw}{d51a19e28d82fae78267a793da21a02b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Synapse Project, SynID: syn51471789. Available: \url{https://www.synapse.org/Synapse:syn51471789/wiki/622255}}
