@@ -17,10 +17,13 @@
 % Define some terms
 
 
-\newabbreviation{davinci}{Da Vinci Platform}{
-    Da Vinci Platform
+\newabbreviation{davinci}{da Vinci Platform}{
+    da Vinci Platform
 }
 
+\newabbreviation{ros}{ROS}{
+    Robot Operating System
+}
 
 \newabbreviation{ots}{OTS}{
       Optical Tracking System}
@@ -124,12 +127,12 @@ In \gls{rmis}, a marker-based method involves placing artificial markers on surg
 
 \section{Related Work}
 \subsection{Traditional non-learning methods}
-Traditional non-learning pose estimation methods are based on geometric modelling, algebraic techniques, and computer vision approaches\cite{fan2024reinforcement}. Non-learning methods differ from deep learning methods, which require a large amount of data as input. Typically, the core of traditional non-deep learning methods is featuring extraction, which is used to obtain a unique representation of an object by identifying edges, key points, or regional features\cite{fan2024reinforcement}. In the early days, the main methods for feature recognition include \gls{sift}\cite{lakshmi2017image}, which is a classical local feature descriptor that helps machines to identify and match feature points in different images, and to find key points in different scale-spaces. Another is the \gld{surf}\cite{wijesinghe2010speed}, which is an improved variant of \gls{sift} that improves the performance of feature extraction by optimising the process of feature detection and description.
-After feature extraction is completed, the target model needs to be parameterised. The \gls{pnp}\cite{yun2017object,lu2018review} algorithm is a commonly used algorithm for model parameterisation, which uses a set of 3D points in the scene and their 2D projections in the image to estimate translation and rotation parameters. Another method is the \gls{icp} algorithm\cite{bellekens2014survey}, which computes the pose relationship between two-point clouds by minimising the distance between corresponding points.
+Traditional non-learning pose estimation methods are based on geometric modeling, algebraic techniques, and computer vision approaches\cite{fan2024reinforcement}. Non-learning methods differ from deep learning methods, which require a large amount of data as input. Typically, the core of traditional non-deep learning methods is featuring extraction, which is used to obtain a unique representation of an object by identifying edges, key points, or regional features\cite{fan2024reinforcement}. In the early days, the main methods for feature recognition include \gls{sift}\cite{lakshmi2017image}, which is a classical local feature descriptor that helps machines to identify and match feature points in different images, and to find key points in different scale-spaces. Another is the \gls{surf}\cite{wijesinghe2010speed}, which is an improved variant of \gls{sift} that improves the performance of feature extraction by optimising the process of feature detection and description.
+
+After feature extraction is completed, the target model needs to be parameterised. The  \gls{pnp} problem, introduced by Fischler in the 1980s, is a commonly used algorithm for model parameterisation,. It focuses on estimating a camera's position and orientation using 3D-to-2D point correspondences \cite{Lu_2018}. \gls{p3p} solves this with three such correspondences, providing up to four solutions. \gls{pnp} handles larger datasets by representing n 3D points as a weighted sum of four virtual control points, reducing computational complexity \cite{10.1007/s11263-008-0152-6}. Another method is the \gls{icp} algorithm\cite{bellekens2014survey}, which computes the pose relationship between two-point clouds by minimising the distance between corresponding points. Another method is the \gls{icp} algorithm\cite{bellekens2014survey}, which computes the pose relationship between two-point clouds by minimising the distance between corresponding points.
 Non-learning methods have better interpretability and can achieve more accurate results while saving computational resources. However, such methods are less robust when dealing with complex scenes and lighting changes and have certain limitations\cite{bellekens2014survey}.
 
-\\\gls{pnp} problem was proposed by Fischler in 1980s, which aims at estimating the position and orientation of a calibrated camera based on known 3D-to-2D point correspondences between a 3D model and their image projections\cite{Fischler1981RandomSC}. The \gls{pnp} is a fundamental problem of many computer vision applications, among which self-motion estimation for robots is a problem of interest.
-      \gls{p3p} and \gls{epnp} are two common solutions to the \gls{pnp} problem in camera pose estimation\cite{Lu_2018}. \gls{p3p} calculates the camera pose using a 3D-2D correspondences, which provides up to four possible solutions and can be disambiguated by adding a fourth point. It is suitable for minimal data scenarios. In contrast, \gls{epnp} handles large datasets more efficiently by representing n 3D points as a weighted sum of four virtual control points, reducing computational complexity while maintaining accuracy\cite{10.1007/s11263-008-0152-6}.
+
 \subsection{Deep Leaning Method}
 In recent years, with the development of deep learning, it has been gradually applied to the field of surgical instrument pose estimation. Different from the traditional way that relies on geometric models and manual feature extraction, deep learning methods can infer the complex relationship between points and points from a large amount of data \cite{ bellekens2014survey}, and according to the facts, deep learning methods are more capable of handling complex scenes with lighting changes\cite{fan2024reinforcement}. Through the concern classification of the model, it can be divided into Holistic method and Intermediate representation method.
 
@@ -157,10 +160,12 @@ This project aims to leverage state-of-the-art deep learning models for pose est
 \\The first objective is to analyze the datasets which include high-quality images captured by the Da Vinci Si endoscopic stereo camera and accurate and consistent ground truth data obtained from the Hamlyn Centre.
 
 \item \textbf{Model Conversion}
-sfkaksjfjak;lfj;akjf;sjf
+\\This project will convert the PyTorch model to an ONNX model to enable its deployment on ARM architectures, such as the NVIDIA Jetson AGX platform.
+
+
 
 \item \textbf{Robust Pose Estimation}
-\\We also need to devise novel approaches to ensure accurate and robust pose estimation in the presence of challenges such as partial tool visibility, occlusions, and other variations encountered during surgery. 
+\\This project also need to devise novel approaches to ensure accurate and robust pose estimation in the presence of challenges such as partial tool visibility, occlusions, and other variations encountered during surgery. 
 
 \item \textbf{Performance Evaluation}
 
@@ -170,13 +175,19 @@ Finally, the project will evaluate and validate the performance of the applied m
 
 
 
-\section{Proposed Methodlogy}
+\section{Proposed Methodology}
+\subsection{Model for Pose Estimation}
+
+
+\subsection{Model Conversion}
 
 
 
+\subsection{Model Integration with da Vinci}
 
-\subsection{Hardware and Software Requirements(TBD)}
 
+\subsection{Hardware and Software Requirements TBD}
+The project requires the NVIDIA AGX Platform for high-performance computing in applications and autonomous machines. It uses Python, C, and C++ languages, and tool packages like PyTorch for deep learning framework and OpenCV for image processing. Additionally, \gls{ros} provides a flexible framework for developing and running robot software across multiple platforms. Docker helps the deployment and management of applications across different platforms or systems.
 
 
 \section{Risk Assessment}
