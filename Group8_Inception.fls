@@ -206,6 +206,8 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT Group8_Inception.toc
 INPUT ./6DoF.png
 INPUT ./6DoF.png
+INPUT ./timeline.png
+INPUT ./timeline.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc

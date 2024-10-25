@@ -1,18 +1,20 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'Group8_Inception.blg'
-[79] biber-MSWIN64:340> INFO - === 
+[78] biber-MSWIN64:340> INFO - === 
 [110] Biber.pm:420> INFO - Reading 'Group8_Inception.bcf'
-[183] Biber.pm:994> INFO - Found 8 citekeys in bib section 0
-[192] Biber.pm:4463> INFO - Processing section 0
-[200] Biber.pm:4654> INFO - Looking for bibtex file 'Reference.bib' for section 0
-[253] bibtex.pm:1713> INFO - LaTeX decoding ...
-[272] bibtex.pm:1519> INFO - Found BibTeX data source 'Reference.bib'
-[323] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[323] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[324] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[324] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[330] bbl.pm:676> INFO - Writing 'Group8_Inception.bbl' with encoding 'UTF-8'
-[335] bbl.pm:779> INFO - Output to Group8_Inception.bbl
-[335] Biber.pm:131> WARN - Duplicate entry key: '10160287' in file 'Reference.bib', skipping ...
-[335] Biber.pm:131> WARN - legacy month field 'sep' in entry 'Lu_2018' is not an integer - this will probably not sort properly.
-[335] Biber.pm:133> INFO - WARNINGS: 2
+[189] Biber.pm:994> INFO - Found 29 citekeys in bib section 0
+[198] Biber.pm:4463> INFO - Processing section 0
+[207] Biber.pm:4654> INFO - Looking for bibtex file 'Reference.bib' for section 0
+[260] bibtex.pm:1713> INFO - LaTeX decoding ...
+[293] bibtex.pm:1519> INFO - Found BibTeX data source 'Reference.bib'
+[409] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[409] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[409] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[409] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[423] bbl.pm:676> INFO - Writing 'Group8_Inception.bbl' with encoding 'UTF-8'
+[437] bbl.pm:779> INFO - Output to Group8_Inception.bbl
+[437] Biber.pm:131> WARN - Duplicate entry key: '10160287' in file 'Reference.bib', skipping ...
+[437] Biber.pm:131> WARN - Duplicate entry key: 'fan2024reinforcement' in file 'Reference.bib', skipping ...
+[437] Biber.pm:131> WARN - Duplicate entry key: 'chen2022occlusion' in file 'Reference.bib', skipping ...
+[437] Biber.pm:131> WARN - legacy month field 'sep' in entry 'Lu_2018' is not an integer - this will probably not sort properly.
+[437] Biber.pm:133> INFO - WARNINGS: 4

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.27)  23 OCT 2024 20:19
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.27)  25 OCT 2024 15:30
  system commands enabled.
 **"c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex"
 ("c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex"
@@ -889,30 +889,30 @@ runsystem(del Group8_Inception.aex)...executed.
  (./Group8_Inception.aux)
 \openout1 = Group8_Inception.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 56.
  (c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -948,7 +948,7 @@ LaTeX Font Info:    ... okay on input line 47.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 47.
+Package hyperref Info: Link coloring ON on input line 56.
 (./Group8_Inception.out) (./Group8_Inception.out)
 \@outlinefile=\write8
 
@@ -986,12 +986,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Group8_Inception.bbl' found.
  (./Group8_Inception.bbl)
-Package biblatex Info: Reference section=0 on input line 47.
-Package biblatex Info: Reference segment=0 on input line 47.
-<Imperial_College_London_new_logo.png, id=80, 12948.375pt x 1422.31375pt>
+Package biblatex Info: Reference section=0 on input line 56.
+Package biblatex Info: Reference segment=0 on input line 56.
+<Imperial_College_London_new_logo.png, id=96, 12948.375pt x 1422.31375pt>
 File: Imperial_College_London_new_logo.png Graphic file (type png)
 <use Imperial_College_London_new_logo.png>
-Package luatex.def Info: Imperial_College_London_new_logo.png  used on input line 52.
+Package luatex.def Info: Imperial_College_London_new_logo.png  used on input line 61.
 (luatex.def)             Requested size: 334.60422pt x 36.74272pt.
  [1
 
@@ -1003,47 +1003,55 @@ Package luatex.def Info: Imperial_College_London_new_logo.png  used on input lin
 \openout9 = Group8_Inception.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1] [2]
-<6Dof.png, id=160, 588.1975pt x 167.62625pt>
+[1]
+<6Dof.png, id=140, 588.1975pt x 167.62625pt>
 File: 6Dof.png Graphic file (type png)
 <use 6Dof.png>
-Package luatex.def Info: 6Dof.png  used on input line 128.
+Package luatex.def Info: 6Dof.png  used on input line 115.
 (luatex.def)             Requested size: 334.60422pt x 95.35611pt.
- [3
+ [2
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
-<./6DoF.png>] [4] [5
+<./6DoF.png>] [3] [4] [5] [6] [7]
+<timeline.png, id=282, 1275.76625pt x 172.645pt>
+File: timeline.png Graphic file (type png)
+<use timeline.png>
+Package luatex.def Info: timeline.png  used on input line 229.
+(luatex.def)             Requested size: 418.25368pt x 56.59894pt.
+ [8
 warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
-] [6]
-Overfull \hbox (13.42691pt too wide) in paragraph at lines 203--203
-\TU/lmr/m/it/12 gripe)\TU/lmr/m/n/12 , Synapse Project, SynID: syn51471789. Avail-able: [][]$\TU/lmtt/m/n/12 https : / / www . synapse .
+] [9
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
+<./timeline.png>] [10] [11]
+Overfull \hbox (3.93518pt too wide) in paragraph at lines 239--239
+\TU/lmr/m/n/12 line]. Avail-able: [][]$\TU/lmtt/m/n/12 https : / / api . semanticscholar . org / CorpusID : 246288038$[][]\TU/lmr/m/n/12 . 
  []
 
-(./Group8_Inception.gls) [7] (./Group8_Inception.aux)
+(./Group8_Inception.gls) [12] [13] (./Group8_Inception.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `Group8_Inception.out' has not changed.
-(rerunfilecheck)             Checksum: A980C77BC0C1CE691AA043A8724213E6;3298.
+(rerunfilecheck)             Checksum: 30BCA7D18683F86C4E7B43FDB7EF59D5;3886.
 Package logreq Info: Writing requests to 'Group8_Inception.run.xml'.
 
 \openout1 = Group8_Inception.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 28423 strings out of 476435
+ 28718 strings out of 476435
  100000,1977958 words of node,token memory allocated
- 874 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 13 attribute, 116 glue_spec, 13 attribute_list, 1 write, 7 pdf_action nodes
-   avail lists: 1:1,2:784,3:404,4:135,5:308,6:89,7:5702,8:55,9:726,10:11,11:463
- 49925 multiletter control sequences out of 65536+600000
+ 854 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 116 glue_spec, 11 attribute_list, 1 write, 5 pdf_action nodes
+   avail lists: 1:1,2:797,3:365,4:170,5:447,6:112,7:7834,8:57,9:729,10:27,11:708
+ 50184 multiletter control sequences out of 65536+600000
  37 fonts using 2779231 bytes
- 106i,11n,101p,2452b,1379s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,11n,101p,2452b,1399s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on Group8_Inception.pdf (8 pages, 1049621 bytes).
+Output written on Group8_Inception.pdf (14 pages, 1149065 bytes).
 
-PDF statistics: 288 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 131072)
- 153 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 400 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 131072)
+ 185 words of extra memory for PDF output out of 10000 (max. 100000000)
 

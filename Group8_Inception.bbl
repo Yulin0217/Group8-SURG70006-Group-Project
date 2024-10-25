@@ -19,6 +19,57 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{10160287}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=d9f4c73d37da9be322d93b41cbc6c493}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Haozheng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=dc902654b1bed1c4b065f356670b8ae2}{%
+           family={Runciman},
+           familyi={R\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a632690b328a07dd951220f75f3897e8}{%
+           family={Cartucho},
+           familyi={C\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a4814e6bba57339b3dd8391e2e32ff4f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chi},
+           giveni={C\bibinitperiod}}}%
+        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
+           family={Giannarou},
+           familyi={G\bibinitperiod},
+           given={Stamatia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2503cc67a8a414fff6ff61924400446a}
+      \strng{fullhash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{fullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{bibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authorbibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authornamehash}{2503cc67a8a414fff6ff61924400446a}
+      \strng{authorfullhash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authorfullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Graph-based Pose Estimation of Texture-less Surgical Tools for Autonomous Robot Control}
+      \field{year}{2023}
+      \field{pages}{2731\bibrangedash 2737}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICRA48891.2023.10160287
+      \endverb
+      \keyw{Shafts;Visualization;Pose estimation;Lighting;Soft robotics;Visual servoing;Real-time systems}
+    \endentry
     \entry{app9030546}{article}{}{}
       \name{author}{7}{}{%
         {{hash=d307184b87e1d74270b6b91269307bbf}{%
@@ -65,8 +116,8 @@
       \strng{authornamehash}{e46b91938e2e24ca7941edb92cc8880c}
       \strng{authorfullhash}{f8f91ff76f4a98c7cfa16f726c4a739a}
       \strng{authorfullhashraw}{f8f91ff76f4a98c7cfa16f726c4a739a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A dialytic-elimination and Newton-iteration based quasi-analytic inverse kinematics approach is proposed for the 6 degree of freedom (DOF) active slave manipulator in the Da Vinci surgical robot and other similar systems. First, the transformation matrix-based inverse kinematics model is derived; then, its high-dimensional nonlinear equations are transformed to a high-order nonlinear equation with only one unknown variable by using the dialytic elimination with a unitary matrix. Finally, the quasi-analytic solution is eventually obtained by the Newton iteration method. Simulations are conducted, and the result show that the proposed quasi-analytic approach has advantages in terms of accuracy (error < 0.00004 degree (or mm)), solution speed (<20 ms) and is barely affected by the singularity during intermediate calculations, which proves that the approach meets the real-time and high-accuracy requirements of master–slave mapping control for the Da Vinci surgical robots and other similar systems. In addition, the proposed approach can also serve as a design reference for other types of robotic arms that do not satisfy the Pieper principle.}
@@ -86,55 +137,30 @@
       \verb https://www.mdpi.com/2076-3417/9/3/546
       \endverb
     \endentry
-    \entry{10160287}{inproceedings}{}{}
-      \name{author}{5}{}{%
-        {{hash=d9f4c73d37da9be322d93b41cbc6c493}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Haozheng},
-           giveni={H\bibinitperiod}}}%
-        {{hash=dc902654b1bed1c4b065f356670b8ae2}{%
-           family={Runciman},
-           familyi={R\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-        {{hash=a632690b328a07dd951220f75f3897e8}{%
-           family={Cartucho},
-           familyi={C\bibinitperiod},
-           given={João},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a4814e6bba57339b3dd8391e2e32ff4f}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Chi},
-           giveni={C\bibinitperiod}}}%
-        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
-           family={Giannarou},
-           familyi={G\bibinitperiod},
-           given={Stamatia},
-           giveni={S\bibinitperiod}}}%
+    \entry{surgripe2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d51a19e28d82fae78267a793da21a02b}{%
+           family={(SurgRIPE)},
+           familyi={(\bibinitperiod},
+           given={Surgical\bibnamedelimb Robot\bibnamedelimb Instrument\bibnamedelimb Pose\bibnamedelima Estimation},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
-      \strng{namehash}{2503cc67a8a414fff6ff61924400446a}
-      \strng{fullhash}{4814ea07b9340467d23a93a3e0ed892e}
-      \strng{fullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
-      \strng{bibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
-      \strng{authorbibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
-      \strng{authornamehash}{2503cc67a8a414fff6ff61924400446a}
-      \strng{authorfullhash}{4814ea07b9340467d23a93a3e0ed892e}
-      \strng{authorfullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{fullhash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{fullhashraw}{d51a19e28d82fae78267a793da21a02b}
+      \strng{bibnamehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authorbibnamehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authornamehash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authorfullhash}{d51a19e28d82fae78267a793da21a02b}
+      \strng{authorfullhashraw}{d51a19e28d82fae78267a793da21a02b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2023 IEEE International Conference on Robotics and Automation (ICRA)}
-      \field{title}{Graph-based Pose Estimation of Texture-less Surgical Tools for Autonomous Robot Control}
-      \field{year}{2023}
-      \field{pages}{2731\bibrangedash 2737}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1109/ICRA48891.2023.10160287
-      \endverb
-      \keyw{Shafts;Visualization;Pose estimation;Lighting;Soft robotics;Visual servoing;Real-time systems}
+      \field{howpublished}{Synapse Project, SynID: syn51471789. Available: \url{https://www.synapse.org/Synapse:syn51471789/wiki/622255}}
+      \field{note}{Accessed: 2024-10-22}
+      \field{title}{Surgical Robot Instrument Pose Estimation (SurgRIPE)}
+      \field{year}{2024}
     \endentry
     \entry{8822749}{article}{}{}
       \name{author}{7}{}{%
@@ -182,8 +208,8 @@
       \strng{authornamehash}{5db9c0911d12ac29b14ac94cdbb87450}
       \strng{authorfullhash}{44be3e9cfb2a6289a52d75606bf8d407}
       \strng{authorfullhashraw}{44be3e9cfb2a6289a52d75606bf8d407}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Reviews in Biomedical Engineering}
@@ -197,43 +223,414 @@
       \endverb
       \keyw{Adaptive optics;Optical imaging;Biomedical optical imaging;Target tracking;Electromagnetics;Surgery;Optical sensors;Optical tracking;electromagnetic tracking;image-guided surgery;minimally invasive surgery;surgical navigation systems}
     \endentry
-    \entry{Fischler1981RandomSC}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=53af7a5ea8715d6c3922933be034062f}{%
-           family={Fischler},
+    \entry{villani2021development}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=e94d9f16570b74012a0c4cd248886b7d}{%
+           family={Villani},
+           familyi={V\bibinitperiod},
+           given={Francesca\bibnamedelima Pia},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=3b1c8cf0454d4ba11d16a207960241d1}{%
+           family={Di\bibnamedelima Cosmo},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Mariachiara},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eef58f19a9703a8ee8555d0b6b8aa218}{%
+           family={Simonetti},
+           familyi={S\bibinitperiod},
+           given={Álvaro\bibnamedelima Bertelsen},
+           giveni={Á\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=44eee8b591f349933f72e2246e85d6ad}{%
+           family={Frontoni},
            familyi={F\bibinitperiod},
-           given={Martin\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=40bae40d0cc01a890e3631288dd8ffa2}{%
-           family={Bolles},
-           familyi={B\bibinitperiod},
-           given={Robert\bibnamedelima C.},
-           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           given={Emanuele},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0def372c7065afc83a602c91bca7792e}{%
+           family={Moccia},
+           familyi={M\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{fd6cd035a6e3f6ec978ad866925826c7}
-      \strng{fullhash}{fd6cd035a6e3f6ec978ad866925826c7}
-      \strng{fullhashraw}{fd6cd035a6e3f6ec978ad866925826c7}
-      \strng{bibnamehash}{fd6cd035a6e3f6ec978ad866925826c7}
-      \strng{authorbibnamehash}{fd6cd035a6e3f6ec978ad866925826c7}
-      \strng{authornamehash}{fd6cd035a6e3f6ec978ad866925826c7}
-      \strng{authorfullhash}{fd6cd035a6e3f6ec978ad866925826c7}
-      \strng{authorfullhashraw}{fd6cd035a6e3f6ec978ad866925826c7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e831391bfbb5b294f87dc6ff2eb5e2ee}
+      \strng{fullhash}{f2eb84ed7df4ac504507c64d045ca5ca}
+      \strng{fullhashraw}{f2eb84ed7df4ac504507c64d045ca5ca}
+      \strng{bibnamehash}{f2eb84ed7df4ac504507c64d045ca5ca}
+      \strng{authorbibnamehash}{f2eb84ed7df4ac504507c64d045ca5ca}
+      \strng{authornamehash}{e831391bfbb5b294f87dc6ff2eb5e2ee}
+      \strng{authorfullhash}{f2eb84ed7df4ac504507c64d045ca5ca}
+      \strng{authorfullhashraw}{f2eb84ed7df4ac504507c64d045ca5ca}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Commun. ACM}
-      \field{title}{Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography}
-      \field{volume}{24}
-      \field{year}{1981}
-      \field{pages}{381\bibrangedash 395}
+      \field{booktitle}{International Conference on Pattern Recognition}
+      \field{title}{Development of an Augmented Reality system based on marker tracking for robotic assisted minimally invasive spine surgery}
+      \field{year}{2021}
+      \field{pages}{461\bibrangedash 475}
       \range{pages}{15}
+    \endentry
+    \entry{ma2021comprehensive}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d69b75a259ba1685d05d630f924bce44}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Ling},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1c455fd38beb0c9aab9c175ff3a29be5}{%
+           family={Fei},
+           familyi={F\bibinitperiod},
+           given={Baowei},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Society of Photo-Optical Instrumentation Engineers}%
+      }
+      \strng{namehash}{3c3b4a222e891f2367e4386b8aff0a21}
+      \strng{fullhash}{3c3b4a222e891f2367e4386b8aff0a21}
+      \strng{fullhashraw}{3c3b4a222e891f2367e4386b8aff0a21}
+      \strng{bibnamehash}{3c3b4a222e891f2367e4386b8aff0a21}
+      \strng{authorbibnamehash}{3c3b4a222e891f2367e4386b8aff0a21}
+      \strng{authornamehash}{3c3b4a222e891f2367e4386b8aff0a21}
+      \strng{authorfullhash}{3c3b4a222e891f2367e4386b8aff0a21}
+      \strng{authorfullhashraw}{3c3b4a222e891f2367e4386b8aff0a21}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of biomedical optics}
+      \field{number}{1}
+      \field{title}{Comprehensive review of surgical microscopes: technology development and medical applications}
+      \field{volume}{26}
+      \field{year}{2021}
+      \field{pages}{010901\bibrangedash 010901}
+      \range{pages}{1}
+    \endentry
+    \entry{xu2023graph}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=d9f4c73d37da9be322d93b41cbc6c493}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Haozheng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=dc902654b1bed1c4b065f356670b8ae2}{%
+           family={Runciman},
+           familyi={R\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a632690b328a07dd951220f75f3897e8}{%
+           family={Cartucho},
+           familyi={C\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a4814e6bba57339b3dd8391e2e32ff4f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chi},
+           giveni={C\bibinitperiod}}}%
+        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
+           family={Giannarou},
+           familyi={G\bibinitperiod},
+           given={Stamatia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2503cc67a8a414fff6ff61924400446a}
+      \strng{fullhash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{fullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{bibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authorbibnamehash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authornamehash}{2503cc67a8a414fff6ff61924400446a}
+      \strng{authorfullhash}{4814ea07b9340467d23a93a3e0ed892e}
+      \strng{authorfullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Graph-based Pose Estimation of Texture-less Surgical Tools for Autonomous Robot Control}
+      \field{year}{2023}
+      \field{pages}{2731\bibrangedash 2737}
+      \range{pages}{7}
+    \endentry
+    \entry{reilink20133d}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a71e06450ba4c208310a34f9e81b079c}{%
+           family={Reilink},
+           familyi={R\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=af92661283f5b14c79ec09409cdfb860}{%
+           family={Stramigioli},
+           familyi={S\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c800c55815585d3cc92cba92a56386da}{%
+           family={Misra},
+           familyi={M\bibinitperiod},
+           given={Sarthak},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \strng{fullhash}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \strng{fullhashraw}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \strng{bibnamehash}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \strng{authorbibnamehash}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \strng{authornamehash}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \strng{authorfullhash}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \strng{authorfullhashraw}{b32e2a954fe61fefd8c870bd9ff8f6a9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of computer assisted radiology and surgery}
+      \field{title}{3D position estimation of flexible instruments: marker-less and marker-based methods}
+      \field{volume}{8}
+      \field{year}{2013}
+      \field{pages}{407\bibrangedash 417}
+      \range{pages}{11}
+    \endentry
+    \entry{hein2021towards}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=ec8f3151df8a840e559247d87b5d27d6}{%
+           family={Hein},
+           familyi={H\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cc74220f6799654b96a94c3df6bd7315}{%
+           family={Seibold},
+           familyi={S\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df9e1fe0b5d831b5ee84fb8d06c8baaf}{%
+           family={Bogo},
+           familyi={B\bibinitperiod},
+           given={Federica},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8c313eb870bc360d86c1fbfac6be3822}{%
+           family={Farshad},
+           familyi={F\bibinitperiod},
+           given={Mazda},
+           giveni={M\bibinitperiod}}}%
+        {{hash=501629493a5ead2d23ee597103478ce8}{%
+           family={Pollefeys},
+           familyi={P\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b84d70f8a11bc17d063f5355304efdae}{%
+           family={Fürnstahl},
+           familyi={F\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c107bbd317cd780c2aa7006dbe61d83f}{%
+           family={Navab},
+           familyi={N\bibinitperiod},
+           given={Nassir},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{80d3da27b094d5dcfb702c342e8129cc}
+      \strng{fullhash}{c15094d2b5b5d9891ff0300fc9f3eca2}
+      \strng{fullhashraw}{c15094d2b5b5d9891ff0300fc9f3eca2}
+      \strng{bibnamehash}{80d3da27b094d5dcfb702c342e8129cc}
+      \strng{authorbibnamehash}{80d3da27b094d5dcfb702c342e8129cc}
+      \strng{authornamehash}{80d3da27b094d5dcfb702c342e8129cc}
+      \strng{authorfullhash}{c15094d2b5b5d9891ff0300fc9f3eca2}
+      \strng{authorfullhashraw}{c15094d2b5b5d9891ff0300fc9f3eca2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of computer assisted radiology and surgery}
+      \field{title}{Towards markerless surgical tool and hand pose estimation}
+      \field{volume}{16}
+      \field{year}{2021}
+      \field{pages}{799\bibrangedash 808}
+      \range{pages}{10}
+    \endentry
+    \entry{enhancedmarker}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a632690b328a07dd951220f75f3897e8}{%
+           family={Cartucho},
+           familyi={C\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4b97bc27071c590db26ea87fb05a4021}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chiyu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bf005c3f4b9f0cde638a031c613a0515}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Baoru},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9eaeaf99335625647ab22efd7b25d8a1}{%
+           family={Elson},
+           familyi={E\bibinitperiod},
+           given={Dan\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fcf0c58bc302d6877e4b774444a94569}{%
+           family={Darzi},
+           familyi={D\bibinitperiod},
+           given={Ara},
+           giveni={A\bibinitperiod}}}%
+        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
+           family={Giannarou},
+           familyi={G\bibinitperiod},
+           given={Stamatia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
+      \strng{fullhash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{fullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{bibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authorbibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authornamehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
+      \strng{authorfullhash}{a7083d45ca3adbec772ee221a3b0969a}
+      \strng{authorfullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Methods in Biomechanics and Biomedical Engineering: Imaging \& Visualization}
+      \field{number}{4}
+      \field{title}{An enhanced marker pattern that achieves improved accuracy in surgical tool tracking}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{400\bibrangedash 408}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/21681163.2021.1997647
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \endverb
       \verb{urlraw}
-      \verb https://api.semanticscholar.org/CorpusID:972888
+      \verb https://doi.org/10.1080/21681163.2021.1997647
       \endverb
       \verb{url}
-      \verb https://api.semanticscholar.org/CorpusID:972888
+      \verb https://doi.org/10.1080/21681163.2021.1997647
       \endverb
+    \endentry
+    \entry{fan2024reinforcement}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=2dcfc86f25edd6323faf8f1f99f5f979}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=386abb3a7414e28373f5cdd4d552096a}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ziyang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0d079485522f23a7c1d2ada1650d3c0d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qiaoling},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=92121220ce240935f52be61770f14990}{%
+           family={Ferrigno},
+           familyi={F\bibinitperiod},
+           given={Giancarlo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d408d12ba50e521a406df3b393de520d}{%
+           family={De\bibnamedelima Momi},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b69b1a4ad48253fb6152c1ba6491f2e5}
+      \strng{fullhash}{5763f247a4b4913c1f9b1aed85ab4499}
+      \strng{fullhashraw}{5763f247a4b4913c1f9b1aed85ab4499}
+      \strng{bibnamehash}{5763f247a4b4913c1f9b1aed85ab4499}
+      \strng{authorbibnamehash}{5763f247a4b4913c1f9b1aed85ab4499}
+      \strng{authornamehash}{b69b1a4ad48253fb6152c1ba6491f2e5}
+      \strng{authorfullhash}{5763f247a4b4913c1f9b1aed85ab4499}
+      \strng{authorfullhashraw}{5763f247a4b4913c1f9b1aed85ab4499}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Medical Robotics and Bionics}
+      \field{title}{A Reinforcement Learning Approach for Real-Time Articulated Surgical Instrument 3D Pose Reconstruction}
+      \field{year}{2024}
+    \endentry
+    \entry{lakshmi2017image}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b4d148bd81c5c40d940f4d7024c048a3}{%
+           family={Lakshmi},
+           familyi={L\bibinitperiod},
+           given={K\bibnamedelima Divya},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f0a0043e77bfa622546b340e2ba1f547}{%
+           family={Vaithiyanathan},
+           familyi={V\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{542c661460420ebd4d4f760f28826240}
+      \strng{fullhash}{542c661460420ebd4d4f760f28826240}
+      \strng{fullhashraw}{542c661460420ebd4d4f760f28826240}
+      \strng{bibnamehash}{542c661460420ebd4d4f760f28826240}
+      \strng{authorbibnamehash}{542c661460420ebd4d4f760f28826240}
+      \strng{authornamehash}{542c661460420ebd4d4f760f28826240}
+      \strng{authorfullhash}{542c661460420ebd4d4f760f28826240}
+      \strng{authorfullhashraw}{542c661460420ebd4d4f760f28826240}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IETE Technical Review}
+      \field{number}{1}
+      \field{title}{Image registration techniques based on the scale invariant feature transform}
+      \field{volume}{34}
+      \field{year}{2017}
+      \field{pages}{22\bibrangedash 29}
+      \range{pages}{8}
+    \endentry
+    \entry{wijesinghe2010speed}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1c1622a462de9505e59596e12f13733c}{%
+           family={Wijesinghe},
+           familyi={W\bibinitperiod},
+           given={WOKAS},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c1622a462de9505e59596e12f13733c}
+      \strng{fullhash}{1c1622a462de9505e59596e12f13733c}
+      \strng{fullhashraw}{1c1622a462de9505e59596e12f13733c}
+      \strng{bibnamehash}{1c1622a462de9505e59596e12f13733c}
+      \strng{authorbibnamehash}{1c1622a462de9505e59596e12f13733c}
+      \strng{authornamehash}{1c1622a462de9505e59596e12f13733c}
+      \strng{authorfullhash}{1c1622a462de9505e59596e12f13733c}
+      \strng{authorfullhashraw}{1c1622a462de9505e59596e12f13733c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Speed up Robust Features in Computer Vision Systems}
+      \field{year}{2010}
     \endentry
     \entry{Lu_2018}{article}{}{}
       \name{author}{1}{}{%
@@ -254,8 +651,8 @@
       \strng{authornamehash}{9d46f7f4eac5528d26b952581e9f9deb}
       \strng{authorfullhash}{9d46f7f4eac5528d26b952581e9f9deb}
       \strng{authorfullhashraw}{9d46f7f4eac5528d26b952581e9f9deb}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{As there is a rapid development of robotics in the field of automation engineering, ego-motion estimation has become a most challenging task. In this review, we presented a model to help describe the PnP problems, and introduced two most common solutions. The P3P solution is the smallest subset of control points that yields a finite number of solutions. The EPnP solution is to reduce the complexity by expressing the n 3D points as a weighted sum of four virtual control points. The former solution is widely applied while there are 3 pairs of corresponding points in the problem. However, in most real cases, the latter is more used.}
@@ -309,8 +706,8 @@
       \strng{authornamehash}{bb9455529fc7550eb3834423674e055e}
       \strng{authorfullhash}{bb9455529fc7550eb3834423674e055e}
       \strng{authorfullhashraw}{bb9455529fc7550eb3834423674e055e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We propose a non-iterative solution to the P n P problem--the estimation of the pose of a calibrated camera from n 3D-to-2D point correspondences--whose computational complexity grows linearly with n . This is in contrast to state-of-the-art methods that are O ( n 5) or even O ( n 8), without being more accurate. Our method is applicable for all n 4 and handles properly both planar and non-planar configurations. Our central idea is to express the n 3D points as a weighted sum of four virtual control points. The problem then reduces to estimating the coordinates of these control points in the camera referential, which can be done in O ( n ) time by expressing these coordinates as weighted sum of the eigenvectors of a 12 12 matrix and solving a small constant number of quadratic equations to pick the right weights. Furthermore, if maximal precision is required, the output of the closed-form solution can be used to initialize a Gauss-Newton scheme, which improves accuracy with negligible amount of additional time. The advantages of our method are demonstrated by thorough testing on both synthetic and real-data.}
@@ -334,98 +731,561 @@
       \endverb
       \keyw{Pose estimation,Perspective-n-Point,Absolute orientation}
     \endentry
-    \entry{enhancedmarker}{article}{}{}
-      \name{author}{6}{}{%
-        {{hash=a632690b328a07dd951220f75f3897e8}{%
-           family={Cartucho},
-           familyi={C\bibinitperiod},
-           given={João},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4b97bc27071c590db26ea87fb05a4021}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Chiyu},
-           giveni={C\bibinitperiod}}}%
-        {{hash=bf005c3f4b9f0cde638a031c613a0515}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Baoru},
+    \entry{bellekens2014survey}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=900a3762c82f8eb11acc7f4bbc54e796}{%
+           family={Bellekens},
+           familyi={B\bibinitperiod},
+           given={Ben},
            giveni={B\bibinitperiod}}}%
-        {{hash=9eaeaf99335625647ab22efd7b25d8a1}{%
-           family={Elson},
-           familyi={E\bibinitperiod},
-           given={Dan\bibnamedelima S.},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=fcf0c58bc302d6877e4b774444a94569}{%
-           family={Darzi},
-           familyi={D\bibinitperiod},
-           given={Ara},
+        {{hash=8ac2008481831ea7f9fd5d7f36a7e795}{%
+           family={Spruyt},
+           familyi={S\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=e4c38f427b24af233b8ef29148d1a95f}{%
+           family={Berkvens},
+           familyi={B\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cdd95454e46b4e7dfadcdf70187700d6}{%
+           family={Weyn},
+           familyi={W\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6882ae040ea0890f3ed5a536ef44c98}
+      \strng{fullhash}{066af8474d3d69d0b7cc1a22f741924c}
+      \strng{fullhashraw}{066af8474d3d69d0b7cc1a22f741924c}
+      \strng{bibnamehash}{066af8474d3d69d0b7cc1a22f741924c}
+      \strng{authorbibnamehash}{066af8474d3d69d0b7cc1a22f741924c}
+      \strng{authornamehash}{d6882ae040ea0890f3ed5a536ef44c98}
+      \strng{authorfullhash}{066af8474d3d69d0b7cc1a22f741924c}
+      \strng{authorfullhashraw}{066af8474d3d69d0b7cc1a22f741924c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AMBIENT 2014: the Fourth International Conference on Ambient Computing, Applications, Services and Technologies, August 24-28, 2014, Rome, Italy}
+      \field{title}{A survey of rigid 3d pointcloud registration algorithms}
+      \field{year}{2014}
+      \field{pages}{8\bibrangedash 13}
+      \range{pages}{6}
+    \endentry
+    \entry{kendall2015posenet}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=4b1053f4ffb69cd61c1f122cc435c884}{%
+           family={Kendall},
+           familyi={K\bibinitperiod},
+           given={Alex},
            giveni={A\bibinitperiod}}}%
-        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
-           family={Giannarou},
+        {{hash=7b022234f3f49a729a26e95123973ff7}{%
+           family={Grimes},
            familyi={G\bibinitperiod},
-           given={Stamatia},
-           giveni={S\bibinitperiod}}}%
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=95c5bd0a1d6e6649ed56043a63268bfa}{%
+           family={Cipolla},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4d52c13accfa11c5398cbd2479eaff4}
+      \strng{fullhash}{f4d52c13accfa11c5398cbd2479eaff4}
+      \strng{fullhashraw}{f4d52c13accfa11c5398cbd2479eaff4}
+      \strng{bibnamehash}{f4d52c13accfa11c5398cbd2479eaff4}
+      \strng{authorbibnamehash}{f4d52c13accfa11c5398cbd2479eaff4}
+      \strng{authornamehash}{f4d52c13accfa11c5398cbd2479eaff4}
+      \strng{authorfullhash}{f4d52c13accfa11c5398cbd2479eaff4}
+      \strng{authorfullhashraw}{f4d52c13accfa11c5398cbd2479eaff4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE international conference on computer vision}
+      \field{title}{Posenet: A convolutional network for real-time 6-dof camera relocalization}
+      \field{year}{2015}
+      \field{pages}{2938\bibrangedash 2946}
+      \range{pages}{9}
+    \endentry
+    \entry{bukschat2020efficientpose}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c46bf530fc829d4eb52e5ba68b67bb97}{%
+           family={Bukschat},
+           familyi={B\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=62675c491ee891657670024d0a9d7040}{%
+           family={Vetter},
+           familyi={V\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e04a378e0cdc36996bae11047130152}
+      \strng{fullhash}{2e04a378e0cdc36996bae11047130152}
+      \strng{fullhashraw}{2e04a378e0cdc36996bae11047130152}
+      \strng{bibnamehash}{2e04a378e0cdc36996bae11047130152}
+      \strng{authorbibnamehash}{2e04a378e0cdc36996bae11047130152}
+      \strng{authornamehash}{2e04a378e0cdc36996bae11047130152}
+      \strng{authorfullhash}{2e04a378e0cdc36996bae11047130152}
+      \strng{authorfullhashraw}{2e04a378e0cdc36996bae11047130152}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2011.04307}
+      \field{title}{EfficientPose: An efficient, accurate and scalable end-to-end 6D multi object pose estimation approach}
+      \field{year}{2020}
+    \endentry
+    \entry{chen2022occlusion}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=31960f03389184b7f052f5b197cc9fdf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=526487d0d2f4d7bc6fadc2fc9c58e9ca}{%
+           family={Chin},
+           familyi={C\bibinitperiod},
+           given={Tat-Jun},
+           giveni={T\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=706769066240244902a9cc3d31885f55}{%
+           family={Klimavicius},
+           familyi={K\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{be7c10fad458a80162f92444b16ee092}
+      \strng{fullhash}{be7c10fad458a80162f92444b16ee092}
+      \strng{fullhashraw}{be7c10fad458a80162f92444b16ee092}
+      \strng{bibnamehash}{be7c10fad458a80162f92444b16ee092}
+      \strng{authorbibnamehash}{be7c10fad458a80162f92444b16ee092}
+      \strng{authornamehash}{be7c10fad458a80162f92444b16ee092}
+      \strng{authorfullhash}{be7c10fad458a80162f92444b16ee092}
+      \strng{authorfullhashraw}{be7c10fad458a80162f92444b16ee092}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision}
+      \field{title}{Occlusion-robust object pose estimation with holistic representation}
+      \field{year}{2022}
+      \field{pages}{2929\bibrangedash 2939}
+      \range{pages}{11}
+    \endentry
+    \entry{watson2014nature}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=9f1f90556b1c8295c36cad8eb780205d}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Tamara\bibnamedelima L},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=7aea8217e0978b5113bc1944c5c68d92}{%
+           family={Robbins},
+           familyi={R\bibinitperiod},
+           given={Rachel\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Taylor \& Francis}%
+        {Frontiers Media SA}%
       }
-      \strng{namehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
-      \strng{fullhash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{fullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{bibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{authorbibnamehash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{authornamehash}{1ac703f1b83ce115cbef1d49a3d21a8d}
-      \strng{authorfullhash}{a7083d45ca3adbec772ee221a3b0969a}
-      \strng{authorfullhashraw}{a7083d45ca3adbec772ee221a3b0969a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \strng{namehash}{d4952cddf6a4fa239ece415ccd1e5902}
+      \strng{fullhash}{d4952cddf6a4fa239ece415ccd1e5902}
+      \strng{fullhashraw}{d4952cddf6a4fa239ece415ccd1e5902}
+      \strng{bibnamehash}{d4952cddf6a4fa239ece415ccd1e5902}
+      \strng{authorbibnamehash}{d4952cddf6a4fa239ece415ccd1e5902}
+      \strng{authornamehash}{d4952cddf6a4fa239ece415ccd1e5902}
+      \strng{authorfullhash}{d4952cddf6a4fa239ece415ccd1e5902}
+      \strng{authorfullhashraw}{d4952cddf6a4fa239ece415ccd1e5902}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Computer Methods in Biomechanics and Biomedical Engineering: Imaging \& Visualization}
-      \field{number}{4}
-      \field{title}{An enhanced marker pattern that achieves improved accuracy in surgical tool tracking}
-      \field{volume}{10}
+      \field{journaltitle}{Frontiers in Psychology}
+      \field{title}{The nature of holistic processing in face and object recognition: Current opinions}
+      \field{volume}{5}
+      \field{year}{2014}
+      \field{pages}{3}
+      \range{pages}{1}
+    \endentry
+    \entry{song2020hybridpose}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=c7a8ba28ba2aa71662ac2a98c63398bd}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a0f011d588c966be5ce3106df181134f}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Jiaru},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90296b22383e2e87596451120ca7e80b}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Qixing},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{14bfc642d03959cd706f87bcf8d2d3da}
+      \strng{fullhash}{14bfc642d03959cd706f87bcf8d2d3da}
+      \strng{fullhashraw}{14bfc642d03959cd706f87bcf8d2d3da}
+      \strng{bibnamehash}{14bfc642d03959cd706f87bcf8d2d3da}
+      \strng{authorbibnamehash}{14bfc642d03959cd706f87bcf8d2d3da}
+      \strng{authornamehash}{14bfc642d03959cd706f87bcf8d2d3da}
+      \strng{authorfullhash}{14bfc642d03959cd706f87bcf8d2d3da}
+      \strng{authorfullhashraw}{14bfc642d03959cd706f87bcf8d2d3da}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
+      \field{title}{Hybridpose: 6d object pose estimation under hybrid representations}
+      \field{year}{2020}
+      \field{pages}{431\bibrangedash 440}
+      \range{pages}{10}
+    \endentry
+    \entry{xiang2017posecnn}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b6d88cfa6a67661781a7484464da5934}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=62929a68a8d4048d15a0bc4486d30ca0}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Tanner},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2beac175a8d9399f81127038ca7e1585}{%
+           family={Narayanan},
+           familyi={N\bibinitperiod},
+           given={Venkatraman},
+           giveni={V\bibinitperiod}}}%
+        {{hash=93b0c4a7857a82a8f94e256475887c74}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4220763a47b42e6269c3358cb3addc7}
+      \strng{fullhash}{597e960d40ca0b9122891629e98515af}
+      \strng{fullhashraw}{597e960d40ca0b9122891629e98515af}
+      \strng{bibnamehash}{597e960d40ca0b9122891629e98515af}
+      \strng{authorbibnamehash}{597e960d40ca0b9122891629e98515af}
+      \strng{authornamehash}{b4220763a47b42e6269c3358cb3addc7}
+      \strng{authorfullhash}{597e960d40ca0b9122891629e98515af}
+      \strng{authorfullhashraw}{597e960d40ca0b9122891629e98515af}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1711.00199}
+      \field{title}{Posecnn: A convolutional neural network for 6d object pose estimation in cluttered scenes}
+      \field{year}{2017}
+    \endentry
+    \entry{peng2019pvnet}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=369e0707d779067ef33cd3650d376b11}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Sida},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8e34231ba9b9318aa75b42a62d10fba4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=90296b22383e2e87596451120ca7e80b}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Qixing},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=be8a2554d7774ac70de3e36b1251df1a}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c384a68d4495c23c2753e5bbbad04be0}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={Hujun},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{52e35f6bc32551376c17cd33ec943849}
+      \strng{fullhash}{c0f78df5c6f545f5ddcabc030b3c2305}
+      \strng{fullhashraw}{c0f78df5c6f545f5ddcabc030b3c2305}
+      \strng{bibnamehash}{c0f78df5c6f545f5ddcabc030b3c2305}
+      \strng{authorbibnamehash}{c0f78df5c6f545f5ddcabc030b3c2305}
+      \strng{authornamehash}{52e35f6bc32551376c17cd33ec943849}
+      \strng{authorfullhash}{c0f78df5c6f545f5ddcabc030b3c2305}
+      \strng{authorfullhashraw}{c0f78df5c6f545f5ddcabc030b3c2305}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
+      \field{title}{Pvnet: Pixel-wise voting network for 6dof pose estimation}
+      \field{year}{2019}
+      \field{pages}{4561\bibrangedash 4570}
+      \range{pages}{10}
+    \endentry
+    \entry{yoshimura2020single}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=81c5c5d77776bd156fb83c60484f265b}{%
+           family={Yoshimura},
+           familyi={Y\bibinitperiod},
+           given={Masakazu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0a4ca8c0d50bf1f81cbae2be0a400114}{%
+           family={Marinho},
+           familyi={M\bibinitperiod},
+           given={Murilo\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=add5b905f7c8350fff8cc09c74d507b7}{%
+           family={Harada},
+           familyi={H\bibinitperiod},
+           given={Kanako},
+           giveni={K\bibinitperiod}}}%
+        {{hash=612b300d5d8a14b1fbf920c2e01749bb}{%
+           family={Mitsuishi},
+           familyi={M\bibinitperiod},
+           given={Mamoru},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0054170be89d50554d7c89b69db98090}
+      \strng{fullhash}{a66d00b0c4cb190ecd1f95b677e86ab4}
+      \strng{fullhashraw}{a66d00b0c4cb190ecd1f95b677e86ab4}
+      \strng{bibnamehash}{a66d00b0c4cb190ecd1f95b677e86ab4}
+      \strng{authorbibnamehash}{a66d00b0c4cb190ecd1f95b677e86ab4}
+      \strng{authornamehash}{0054170be89d50554d7c89b69db98090}
+      \strng{authorfullhash}{a66d00b0c4cb190ecd1f95b677e86ab4}
+      \strng{authorfullhashraw}{a66d00b0c4cb190ecd1f95b677e86ab4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Single-shot pose estimation of surgical robot instruments’ shafts from monocular endoscopic images}
+      \field{year}{2020}
+      \field{pages}{9960\bibrangedash 9966}
+      \range{pages}{7}
+    \endentry
+    \entry{park2024towards}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=5a6e7881e13f8b1712ac39fc465cc96e}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jihun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dbfed0699cc7732eaeed6b088068d129}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Jiuk},
+           giveni={J\bibinitperiod}}}%
+        {{hash=695373398921e1efb238838f7635a617}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Jihun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=83d95b41ed7501169948d583e40d28db}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Bokyung},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0925106db6d2dcb6645889e36e715ce6}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Min-Kook},
+           giveni={M\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=eb5081b432af07c9b00738e1883dc810}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Heechul},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f2f4db59fd957f72af348b70e9a4eced}
+      \strng{fullhash}{ed417844b8b7b019b64830b28e829da9}
+      \strng{fullhashraw}{ed417844b8b7b019b64830b28e829da9}
+      \strng{bibnamehash}{ed417844b8b7b019b64830b28e829da9}
+      \strng{authorbibnamehash}{ed417844b8b7b019b64830b28e829da9}
+      \strng{authornamehash}{f2f4db59fd957f72af348b70e9a4eced}
+      \strng{authorfullhash}{ed417844b8b7b019b64830b28e829da9}
+      \strng{authorfullhashraw}{ed417844b8b7b019b64830b28e829da9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Medical Image Computing and Computer-Assisted Intervention}
+      \field{title}{Towards Precise Pose Estimation in Robotic Surgery: Introducing Occlusion-Aware Loss}
+      \field{year}{2024}
+      \field{pages}{639\bibrangedash 648}
+      \range{pages}{10}
+    \endentry
+    \entry{allan20183}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=1deae1f692781c3112c9bac0caff2e56}{%
+           family={Allan},
+           familyi={A\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=81ba59598fdce027a3a694c8dd331fe7}{%
+           family={Ourselin},
+           familyi={O\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b97fd84353a53c6d05957656a027f49d}{%
+           family={Hawkes},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=6ecc2ba1be794471b24af94fbcdfcb2f}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=1f858e350dfbb68c0e899ab729685036}{%
+           family={Stoyanov},
+           familyi={S\bibinitperiod},
+           given={Danail},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d63d0a14f61398386a494588edadf98d}
+      \strng{fullhash}{d058fa4eaaf95dc55f50d52559d2ed24}
+      \strng{fullhashraw}{d058fa4eaaf95dc55f50d52559d2ed24}
+      \strng{bibnamehash}{d058fa4eaaf95dc55f50d52559d2ed24}
+      \strng{authorbibnamehash}{d058fa4eaaf95dc55f50d52559d2ed24}
+      \strng{authornamehash}{d63d0a14f61398386a494588edadf98d}
+      \strng{authorfullhash}{d058fa4eaaf95dc55f50d52559d2ed24}
+      \strng{authorfullhashraw}{d058fa4eaaf95dc55f50d52559d2ed24}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on medical imaging}
+      \field{number}{5}
+      \field{title}{3-D pose estimation of articulated instruments in robotic minimally invasive surgery}
+      \field{volume}{37}
+      \field{year}{2018}
+      \field{pages}{1204\bibrangedash 1213}
+      \range{pages}{10}
+    \endentry
+    \entry{Jeong2022TensorRTBasedFA}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ab50eac96a64e5ed9d30dc5db57d3fd4}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Eunji},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5e6d2af219ecb4a27f9f84cbfe783ee8}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jangryul},
+           giveni={J\bibinitperiod}}}%
+        {{hash=20555176d25c3c1fdf62f8c98fa73c2f}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={Soonhoi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbf09d4691f3e8734b72764a1301103a}
+      \strng{fullhash}{fbf09d4691f3e8734b72764a1301103a}
+      \strng{fullhashraw}{fbf09d4691f3e8734b72764a1301103a}
+      \strng{bibnamehash}{fbf09d4691f3e8734b72764a1301103a}
+      \strng{authorbibnamehash}{fbf09d4691f3e8734b72764a1301103a}
+      \strng{authornamehash}{fbf09d4691f3e8734b72764a1301103a}
+      \strng{authorfullhash}{fbf09d4691f3e8734b72764a1301103a}
+      \strng{authorfullhashraw}{fbf09d4691f3e8734b72764a1301103a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Embedded Computing Systems (TECS)}
+      \field{title}{TensorRT-Based Framework and Optimization Methodology for Deep Learning Inference on Jetson Boards}
+      \field{volume}{21}
       \field{year}{2022}
-      \field{pages}{400\bibrangedash 408}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1080/21681163.2021.1997647
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1080/21681163.2021.1997647
-      \endverb
+      \field{pages}{1\bibrangedash 26}
+      \range{pages}{26}
       \verb{urlraw}
-      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \verb https://api.semanticscholar.org/CorpusID:246288038
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1080/21681163.2021.1997647
+      \verb https://api.semanticscholar.org/CorpusID:246288038
       \endverb
     \endentry
-    \entry{surgripe2024}{misc}{}{}
+    \entry{karumbunathan2022nvidia}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=d51a19e28d82fae78267a793da21a02b}{%
-           family={(SurgRIPE)},
-           familyi={(\bibinitperiod},
-           given={Surgical\bibnamedelimb Robot\bibnamedelimb Instrument\bibnamedelimb Pose\bibnamedelima Estimation},
-           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3d91cf5d1f45d7bfa2f84b3b1fd4c370}{%
+           family={Karumbunathan},
+           familyi={K\bibinitperiod},
+           given={Leela\bibnamedelima S},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
-      \strng{namehash}{d51a19e28d82fae78267a793da21a02b}
-      \strng{fullhash}{d51a19e28d82fae78267a793da21a02b}
-      \strng{fullhashraw}{d51a19e28d82fae78267a793da21a02b}
-      \strng{bibnamehash}{d51a19e28d82fae78267a793da21a02b}
-      \strng{authorbibnamehash}{d51a19e28d82fae78267a793da21a02b}
-      \strng{authornamehash}{d51a19e28d82fae78267a793da21a02b}
-      \strng{authorfullhash}{d51a19e28d82fae78267a793da21a02b}
-      \strng{authorfullhashraw}{d51a19e28d82fae78267a793da21a02b}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \list{publisher}{1}{%
+        {Mar}%
+      }
+      \strng{namehash}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \strng{fullhash}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \strng{fullhashraw}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \strng{bibnamehash}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \strng{authorbibnamehash}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \strng{authornamehash}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \strng{authorfullhash}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \strng{authorfullhashraw}{3d91cf5d1f45d7bfa2f84b3b1fd4c370}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{Synapse Project, SynID: syn51471789. Available: \url{https://www.synapse.org/Synapse:syn51471789/wiki/622255}}
-      \field{note}{Accessed: 2024-10-22}
-      \field{title}{Surgical Robot Instrument Pose Estimation (SurgRIPE)}
-      \field{year}{2024}
+      \field{title}{NVIDIA Jetson AGX Orin Series}
+      \field{year}{2022}
+    \endentry
+    \entry{10283807}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=77019dd4d533b8fd37d40883b37b68f4}{%
+           family={Khoshsirat},
+           familyi={K\bibinitperiod},
+           given={Aria},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d2cbfcf4e8eab671dfa978903111e6a7}{%
+           family={Perin},
+           familyi={P\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=37e6ff243ac473dc8c8528172a1d2e5f}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \strng{fullhash}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \strng{fullhashraw}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \strng{bibnamehash}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \strng{authorbibnamehash}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \strng{authornamehash}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \strng{authorfullhash}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \strng{authorfullhashraw}{b5f1be75d1ad3b87e33d00a9498bb415}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 IEEE International Conference on Communications Workshops (ICC Workshops)}
+      \field{title}{Divide and Save: Splitting Workload Among Containers in an Edge Device to Save Energy and Time}
+      \field{year}{2023}
+      \field{pages}{134\bibrangedash 138}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICCWorkshops57953.2023.10283807
+      \endverb
+      \keyw{Economics;Energy consumption;Image edge detection;Conferences;Containers;Energy efficiency;Inference algorithms;Energy Efficiency;Inference Time;Edge Computing;Containers;Object Detection}
     \endentry
   \enddatalist
 \endrefsection

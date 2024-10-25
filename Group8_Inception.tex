@@ -20,6 +20,9 @@
 \newabbreviation{davinci}{da Vinci Platform}{
     da Vinci Platform
 }
+\newabbreviation{onnx}{ONNX}{
+      Open Neural Network Exchange
+}
 
 \newabbreviation{ros}{ROS}{
     Robot Operating System
@@ -180,7 +183,7 @@ Finally, the project will evaluate and validate the performance of the applied m
 
 
 \subsection{Model Conversion}
-
+In the process of deploying deep learning models on the NVIDIA AGX platform, PyTorch models first need to be converted to the \gls{onnx} format to ensure cross-platform compatibility. The \gls{onnx} format is a common intermediate representation that enables model migration and transforming between different frameworks and hardware, so that PyTorch models can be used directly in the embedded environment. gls{onnx} models can be optimized on the NVIDIA Jetson AGX through TensorRT. TensorRT could improve the inference speed and computational efficiency, especially for embedded platforms such as NVIDIA's Jetson AGX. This optimization process includes multi-threading, pipelining, buffer assignment, and network duplication\cite{Jeong2022TensorRTBasedFA}\cite{karumbunathan2022nvidia}. In addition, the use of docker containers for model deployment is required, allowing model training environment transformation in deploying complex models\cite{10283807}.
 
 
 \subsection{Model Integration with da Vinci}
