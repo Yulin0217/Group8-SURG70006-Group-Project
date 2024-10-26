@@ -219,7 +219,7 @@ This system incorporates two visual subsystems(shown in Figure 2)\cite{7989412}.
 
 
 \subsection{Hardware and Software Requirements}
-\textbf{NVIDIA AGX Platform Development}: A high-performance computing platform for advanced AI applications in autonomous machines. \\
+\textbf{NVIDIA Jetson AGX Platform Development}: This project will use NVDIA AGX Platform to deploy the deep learning models.\\
 \textbf{Languages}: Python, C, C++ \\
 \textbf{Tool Packages}: PyTorch, OpenCV \\
 \textbf{ROS (Robot Operating System)}: A flexible framework for developing and running robot software across multiple systems. \\
@@ -240,7 +240,7 @@ This system incorporates two visual subsystems(shown in Figure 2)\cite{7989412}.
       \resizebox{\textwidth}{!}{
       \begin{tabular}{| >{\centering\arraybackslash}m{4cm} | >{\centering\arraybackslash}m{5cm} | >{\centering\arraybackslash}m{2.5cm} | >{\centering\arraybackslash}m{2.5cm} |}
       \hline
-      \normalsize\textbf{Risk} & \normalsize\textbf{Contingencies} & \normalsize\textbf{Likelihood} & \normalsize\textbf{Impact} \\ 
+      \normalsize\textbf{Risk} & \normalsize\textbf{Mitigation Strategy} & \normalsize\textbf{Likelihood} & \normalsize\textbf{Impact} \\ 
       \hline
       \normalsize Pose estimation unstable in complex scenes (e.g., occlusion, dynamic background) & \normalsize Optimizing the dataset with more occlusion scene data & \normalsize High & \normalsize Very High \\ 
       \hline
@@ -266,7 +266,7 @@ This system incorporates two visual subsystems(shown in Figure 2)\cite{7989412}.
 
 \section{Project Management}
 \subsection{Progress Monitoring}
-For code part, we use GitHub for monitoring and progress management. We use GitHub's version control to branch the code (each team member manages a branch independently) to ensure smooth team collaboration. We also manually record project logs(such as meeting minutes and group activities) and combine them with timelines to ensure the project run smoothly.
+For coding part, we use GitHub for monitoring and progress management. We use GitHub's version control to branch the code (each team member manages a branch independently) to ensure smooth team collaboration. We also manually record project logs(such as meeting minutes and group activities) and combine them with timelines to ensure the project run smoothly.
 \subsection{Rules of Group Members}
 \begin{table}[H]
       \centering
@@ -276,9 +276,9 @@ For code part, we use GitHub for monitoring and progress management. We use GitH
       \hline
       \normalsize\textbf{Names} & \normalsize\textbf{Roles} \\ 
       \hline
-      \normalsize Jinling Qiu (Leader) and Jie Li  & \normalsize Run samples on ROS and DVRK, Test arm movement with a given trajectory, Use marker-based pose to guide the instrument arm, Use the poses transferred from image processing group to guide the instrument arm, and Presentation Preparation \\ 
+      \normalsize Jinling Qiu (Leader) and Jie Li  & \normalsize Run samples on ROS and DVRK; Test arm movement with a given trajectory; Use marker-based pose to guide the instrument arm; Use the poses transferred from image processing group to guide the instrument arm, and Presentation Preparation \\ 
       \hline
-      \normalsize Yanrui Liu, Yulin Huang and Leen AlShelh  & \normalsize Connect Real-time video stream from da Vinci endoscope to AGX, Deploy deep learning model on AGX (in pytorch or ONNX), Create pipelne for Real-time inference, use TCP-IP to send visual feedback to robotic control group, and Presentation Preparation \\ 
+      \normalsize Yanrui Liu, Yulin Huang and Leen AlShelh  & \normalsize Connect Real-time video stream from da Vinci endoscope to AGX; Deploy deep learning model on AGX (in pytorch or ONNX); Create pipelne for Real-time inference; use TCP-IP to send visual feedback to robotic control group, and Presentation Preparation \\ 
       \hline    
       \end{tabular}
       }
