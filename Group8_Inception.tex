@@ -158,7 +158,7 @@ The intermediate representation method decomposes the complex pose estimation ta
 
 In 2017, Yu Xiang and his team proposed PoseCNN for pose estimation in complex scenes. The method decomposes the pose estimation task into multiple components that deal with 3D translations and rotations of images separately. In addition, PoseCNN introduces a novel loss function that allows the network to better handle objects with symmetry\cite{xiang2017posecnn}.
 
-Subsequently, in 2019, Sida Peng and his team proposed PVNet\cite{peng2019pvnet}. this approach uses a pixel-level voting network that significantly improves pose estimation accuracy in occluded and truncated scenes by predicting vectors from each pixel to a key point, combined with a RANSAC-based voting mechanism.
+Subsequently, in 2019, Sida Peng and his team proposed PVNet\cite{peng2019pvnet}. This approach uses a pixel-level voting network that significantly improves pose estimation accuracy in occluded and truncated scenes by predicting vectors from each pixel to a key point, combined with a RANSAC-based voting mechanism.
 
 In 2020, Masakazu Yoshimura and his team developed a deep learning model based on an improved SSD-6D architecture\cite{yoshimura2020single}. The model utilises a manually generated dataset of single-frame endoscopic images combined with data enhancement techniques to effectively address occlusion and perspective distortion problems common in surgical environments.
 
@@ -204,7 +204,7 @@ Following keypoint prediction, graph information is constructed for the identifi
 
 
 \subsection{Model Conversion}
-In the process of deploying deep learning models on the NVIDIA Jetson AGX platform, PyTorch models first need to be converted to the \gls{onnx} format to ensure cross-platform compatibility. The \gls{onnx} format is a common intermediate representation that enables model migration and transforming between different frameworks and hardware, so that PyTorch models can be used directly in the embedded environment. \gls{onnx} models can be optimized on the NVIDIA Jetson AGX through TensorRT. TensorRT could improve the inference speed and computational efficiency, especially for embedded platforms such as NVIDIA's Jetson AGX. This optimization process includes multi-threading, pipelining, buffer assignment, and network duplication\cite{Jeong2022TensorRTBasedFA}\cite{karumbunathan2022nvidia}. In addition, the use of docker containers for model deployment is required, allowing model training environment transformation in deploying complex models\cite{10283807}.
+In the process of deploying deep learning models on the NVIDIA Jetson AGX platform, PyTorch models first need to be converted to the \gls{onnx} format to ensure cross-platform compatibility. The \gls{onnx} format is a common intermediate representation that enables model migration and transforming between different frameworks and hardware, so that PyTorch models can be used directly in the embedded environment. \gls{onnx} models can be optimized on the NVIDIA Jetson AGX through TensorRT. TensorRT can improve the inference speed and computational efficiency, especially for embedded platforms. This optimization process includes multi-threading, pipelining, buffer assignment, and network duplication\cite{Jeong2022TensorRTBasedFA}\cite{karumbunathan2022nvidia}. In addition, the use of docker containers for model deployment is required, allowing convenient model training environment transformation in deploying complex models\cite{10283807}.
 
 
 \subsection{Model Integration with da Vinci}
