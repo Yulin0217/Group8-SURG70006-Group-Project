@@ -76,7 +76,7 @@
 
       \vspace{0.5cm}
       \Huge
-      \textbf{Project 19 \\ Surgical Robot Instrument Pose Estimation }
+      \textbf{Project 19 \\ Surgical Robot Instrument Pose Estimation Inception Report}
 
       \vspace{1.3cm}
 
@@ -86,12 +86,12 @@
             \normalsize % Smaller text size within the box
             \textbf{Group Number:} Group 8\\[20pt] % Name on the same line, add vertical space
             \textbf{Group Members:} Jie Li, Jinling Qiu, Leen AIShelh, Yanrui Liu, Yulin Huang\\[20pt] % ID on the same line, add vertical space
-            \textbf{Supervisor Name:} Dr Stamatia Giannarou, Haozheng Xu % Supervisor on the same line
+            \textbf{Supervisors Name:} Dr Stamatia Giannarou, Haozheng Xu % Supervisor on the same line
       \end{mdframed}
 
       \vspace{2cm} % Adjust space as necessary
       \Large
-      \textbf{DEPARTMENT OF}\\
+      \textbf{Department of}\\
       \vspace{0.1cm} % Adjust line spacing
       \textbf{Surgery and Cancer}
 
@@ -110,22 +110,22 @@
 
 % Introduction & Background
 \section{Introduction}
-\subsection{Minimally invasive surgery and Robotic surgery}
+\subsection{Minimally Invasive Surgery and Robotic Surgery}
 \gls{mis} has expanded significantly in modern medicine, driven by advancements in robotics and technology. \gls{mis} involves a surgeon using elongated instruments and a surgical camera inserted through small incisions, resulting in reduced trauma to the patient compared to open surgery\cite{mcafee2010minimally}\cite{allan20183}. Research indicates that \gls{mis} often leads to better outcomes, such as shorter patient recovery times and increased surgical efficiency\cite{mcafee2010minimally}. However, \gls{mis} is also limited by factors such as reduced tactile feedback and depth perception, which can complicate the surgeon’s tool manipulation and contribute to increased cognitive workload, especially when the surgeon relies solely on visual feedback\cite{allan20183}\cite{allan2017visual}. Moreover, the training process for new surgeons is lengthy, as it takes considerable time for them to master the techniques\cite{allan20183}\cite{allan2017visual}\cite{hein2021towards}.
 
 To address the limitations of open surgery and \gls{mis}, \gls{rmis}, such as the Da Vinci system, was developed with enhanced dexterity, additional degree of freedom, clearer 3D vision and cancels out tremors\cite{plerhoples2012aching}\cite{allan2017visual}\cite{allan20183}. This technology enables surgeons to perform procedures with minimal trauma to critical structures and provides a clear view of various pathologies\cite{allan2017visual}.
 
-During \gls{mis}, the surgeon might have limited view due to instrument obstruction, which can negatively impact the outcome especially with the surgeon depending entirely on visual feedback. When instruments block the camera's line of sight, it can result in unexpected and unintended damage to adjacent tissues, possibly harming vital anatomical structures such as vessels, nerves or ducts. Consequently, this may result in longer surgeries, increased morbidity and potential long-term complications. Although the latest Da Vinci model has haptic feedback, allowing surgeons to have force-related input\cite{saracino2019haptic}, the clinical implications are not fully understood. With that in mind, pose estimation can allow the surgeon to have more precise and intended movement during the surgery, reducing the percentage of iatrogenic injuries\cite{allan2017visual}\cite{hein2021towards}. Furthermore, the surgeon may experience a high cognitive load, causing mental and physical fatigue due to constant adjustment of camera and instrument position to maintain a clear view of the anatomy\cite{allan20183}\cite{allan2017visual}\cite{shugaba2022should}. This can divert the surgeon's attention to tasks other than the surgery. Therefore, recent research in estimating instrument position is being conducted as it "can enable skill analysis, phase detection, motion estimation, tool–tissue interaction and pave the way towards image-guided interventions.”\cite{hein2021towards} Nowadays there are many external devices like depth camera, electromagnetic trackers etc. available for space estimation in surgical instruments but they are not practical in in-vivo surgeries because of space and hardware constraints\cite{enhancedmarker}.
+During MIS, the surgeon might have limited view due to instrument obstruction, which can negatively impact the outcome especially with the surgeon depending entirely on visual feedback \cite{kassahun2016surgical}. When instruments block the camera's line of sight, it can result in unexpected and unintended damage to adjacent tissues, possibly harming vital anatomical structures such as vessels, nerves or ducts. Consequently, this may result in longer surgeries, increased morbidity and potential long-term complications\cite{allan2017visual} \cite{allan20183}. Although the latest Da Vinci model has haptic feedback, allowing surgeons to have force-related input\cite{saracino2019haptic}, the clinical implications are not fully understood. With that in mind, pose estimation can allow the surgeon to have more precise and intended movement during the surgery, reducing the percentage of iatrogenic injuries\cite{allan2017visual}\cite{hein2021towards}. Furthermore, the surgeon may experience a high cognitive load, causing mental and physical fatigue due to constant adjustment of camera and instrument position to maintain a clear view of the anatomy\cite{allan20183}\cite{allan2017visual}\cite{shugaba2022should}. This can divert the surgeon's attention to tasks other than the surgery. Therefore, recent research in estimating instrument position is being conducted as it "can enable skill analysis, phase detection, motion estimation, tool–tissue interaction and pave the way towards image-guided interventions.”\cite{hein2021towards} Nowadays there are many external devices like depth camera, electromagnetic trackers etc. available for space estimation in surgical instruments but they are not practical in in-vivo surgeries because of space and hardware constraints\cite{enhancedmarker}.
 
 \subsection{Problem Statement}
 There are some vision-based methods that use external markers to track the instruments. However, these methods have major limitations: the markers must always be visible in the camera's field of view and are sensitive to background changes and occlusions\cite{10160287}. In this case, a vision-based markerless instrument tracking method that does not require any modifications to the hardware setup or external markers is necessary. 
 \subsection{Engineering Background}
-The da Vinci surgical robot operates with \gls{6dof}. These \gls{6dof} refer to the robot's ability to move and rotate in three-dimensional space, including three translational movements (up/down, left/right, forward/backward) and three rotational movements (pitch, yaw, and roll)\cite{app9030546}. This range of motion allows the da Vinci system to replicate the complex dexterity of a surgeon's hand for precise control over surgical instruments in confined spaces. The main aim of this project is to develop a deep learning based markerless \gls{6dof} surgical instrument pose estimation system. The system will be designed to provide highly accurate surgical instrument \gls{6dof} estimation without relying on external markers or complex hardware.
+The da Vinci surgical robot operates with \gls{6dof}. These \gls{6dof} refer to the robot's ability to move and rotate in three-dimensional space, including three translational movements (up/down, left/right, forward/backward) and three rotational movements (pitch, yaw, and roll)\cite{app9030546}. This range of motion allows the da Vinci system to replicate the complex dexterity of a surgeon's hand for precise control over surgical instruments in confined spaces. The main aim of this project is to develop a deep learning based markerless \gls{6dof} surgical instrument pose estimation system. The system will be designed to provide highly accurate surgical instrument \gls{6dof} estimation without relying on external markers or complex hardware. 6Dof surgical instrument pose estimation with and without occlusion shown in Figure 1\cite{surgripe2024}.
 
 \begin{figure}[H]
             \centering
             \includegraphics[width=0.8\textwidth]{6Dof.png}
-            \caption{\gls{6dof} surgical instrument pose estimation with (left) and without occlusion (right). \cite{surgripe2024}}
+            \caption{\gls{6dof} surgical instrument pose estimation with (left) and without occlusion (right)\cite{surgripe2024}}
       \end{figure}
 
 
@@ -138,7 +138,7 @@ In \gls{rmis}, a marker-based method involves placing artificial markers on surg
 
 
 \section{Related Work}
-\subsection{Traditional non-learning methods}
+\subsection{Traditional Non-learning Methods}
 Traditional non-learning pose estimation methods are based on geometric modeling, algebraic techniques, and computer vision approaches\cite{fan2024reinforcement}. Non-learning methods differ from deep learning methods, which require a large amount of data as input. Typically, the core of traditional non-deep learning methods is featuring extraction, which is used to obtain a unique representation of an object by identifying edges, key points, or regional features\cite{fan2024reinforcement}. In the early days, the main methods for feature recognition include \gls{sift}\cite{lakshmi2017image}, which is a classical local feature descriptor that helps machines to identify and match feature points in different images, and to find key points in different scale-spaces. Another is the \gls{surf}\cite{wijesinghe2010speed}, which is an improved variant of \gls{sift} that improves the performance of feature extraction by optimising the process of feature detection and description.
 
 After feature extraction is completed, the target model needs to be parameterised. The  \gls{pnp} problem, introduced by Fischler in the 1980s, is a commonly used algorithm for model parameterisation,. It focuses on estimating a camera's position and orientation using 3D-to-2D point correspondences \cite{Lu_2018}. \gls{p3p} solves this with three such correspondences, providing up to four solutions. \gls{pnp} handles larger datasets by representing n 3D points as a weighted sum of four virtual control points, reducing computational complexity \cite{10.1007/s11263-008-0152-6}. Another method is the \gls{icp} algorithm\cite{bellekens2014survey}, which computes the pose relationship between two-point clouds by minimising the distance between corresponding points. Another method is the \gls{icp} algorithm\cite{bellekens2014survey}, which computes the pose relationship between two-point clouds by minimising the distance between corresponding points.
@@ -208,12 +208,12 @@ cIn the process of deploying deep learning models on the NVIDIA AGX platform, Py
 
 
 \subsection{Model Integration with da Vinci}
-This system incorporates two visual subsystems. The endomicroscope system generates a high-resolution, large-area 2D mosaic by integrating multiple microscopic images. The stereo laparoscope system captures 3D spatial information through stereoscopic imaging. These two visual systems enable high-resolution 3D imaging and precise pose estimation. Initially, the system feasibility is verified using a marker-based method for pose estimation, followed by the implementation of a marker-less approach to generate accurate 3D coordinates. Trajectory planning is performed by combining the 3D coordinate information with the stereoscopic data from the Stereo Laparoscope System, ultimately achieving visual control to adjust the probe’s pose dynamically. The dVRK-ROS bridge establishes a connection between the dVRK system and the ROS (Robot Operating System). The CISST/SAW controller then operates the dVRK controller, enabling continuous control of the da Vinci robot.\cite{7989412}
+This system incorporates two visual subsystems(shown in Figure 2)\cite{7989412}. The endomicroscope system generates a high-resolution, large-area 2D mosaic by integrating multiple microscopic images. The stereo laparoscope system captures 3D spatial information through stereoscopic imaging. These two visual systems enable high-resolution 3D imaging and precise pose estimation. Initially, the system feasibility is verified using a marker-based method for pose estimation, followed by the implementation of a marker-less approach to generate accurate 3D coordinates. Trajectory planning is performed by combining the 3D coordinate information with the stereoscopic data from the Stereo Laparoscope System, ultimately achieving visual control to adjust the probe’s pose dynamically. The dVRK-ROS bridge establishes a connection between the dVRK system and the ROS (Robot Operating System). The CISST/SAW controller then operates the dVRK controller, enabling continuous control of the da Vinci robot.
 
 \begin{figure}[H]
             \centering
             \includegraphics[width=0.8\textwidth]{model integration.png}
-            \caption{An overview of our proposed system framework for autonomous endomicroscopic scanning and 3D mosaicing\cite{7989412}}
+            \caption{An overview of the proposed system framework for autonomous endomicroscopic scanning and 3D mosaicing\cite{7989412}}
       \end{figure}
 
 

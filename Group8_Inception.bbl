@@ -275,6 +275,66 @@
       \field{pages}{65\bibrangedash 72}
       \range{pages}{8}
     \endentry
+    \entry{kassahun2016surgical}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=2ec7835ea7f8266bc2a6d2cc8378c304}{%
+           family={Kassahun},
+           familyi={K\bibinitperiod},
+           given={Yohannes},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a89b6783ffa62e99a56d7b7d51971dd7}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Bingbin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3409de4a525add59543a0912f720e463}{%
+           family={Tibebu},
+           familyi={T\bibinitperiod},
+           given={Abraham\bibnamedelima Temesgen},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=1f858e350dfbb68c0e899ab729685036}{%
+           family={Stoyanov},
+           familyi={S\bibinitperiod},
+           given={Danail},
+           giveni={D\bibinitperiod}}}%
+        {{hash=54eaabb93e8af6ca3e0517fded1a10a3}{%
+           family={Giannarou},
+           familyi={G\bibinitperiod},
+           given={Stamatia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=21923fb486ef4c63bad4c8fcac6cc124}{%
+           family={Metzen},
+           familyi={M\bibinitperiod},
+           given={Jan\bibnamedelima Hendrik},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4ef11a5bdfda670a3bed3cada98f908a}{%
+           family={Vander\bibnamedelima Poorten},
+           familyi={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ca9182bd11620f8ec5cd94c86b176d10}
+      \strng{fullhash}{e2993d458e6568c51e9606cfbfa51f37}
+      \strng{fullhashraw}{e2993d458e6568c51e9606cfbfa51f37}
+      \strng{bibnamehash}{ca9182bd11620f8ec5cd94c86b176d10}
+      \strng{authorbibnamehash}{ca9182bd11620f8ec5cd94c86b176d10}
+      \strng{authornamehash}{ca9182bd11620f8ec5cd94c86b176d10}
+      \strng{authorfullhash}{e2993d458e6568c51e9606cfbfa51f37}
+      \strng{authorfullhashraw}{e2993d458e6568c51e9606cfbfa51f37}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of computer assisted radiology and surgery}
+      \field{title}{Surgical robotics beyond enhanced dexterity instrumentation: a survey of machine learning techniques and their role in intelligent and autonomous surgical actions}
+      \field{volume}{11}
+      \field{year}{2016}
+      \field{pages}{553\bibrangedash 568}
+      \range{pages}{16}
+    \endentry
     \entry{saracino2019haptic}{article}{}{}
       \name{author}{7}{}{%
         {{hash=b0fe0e30e1d691a026a2ea1f02199917}{%
@@ -380,8 +440,8 @@
       \strng{authornamehash}{8ab6309baa038cc25c01e349dd642cc9}
       \strng{authorfullhash}{b372501edb2f66c23f46fda0a9d2964b}
       \strng{authorfullhashraw}{b372501edb2f66c23f46fda0a9d2964b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Gastrointestinal Surgery}
@@ -649,8 +709,8 @@
       \strng{authornamehash}{5db9c0911d12ac29b14ac94cdbb87450}
       \strng{authorfullhash}{44be3e9cfb2a6289a52d75606bf8d407}
       \strng{authorfullhashraw}{44be3e9cfb2a6289a52d75606bf8d407}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Reviews in Biomedical Engineering}
@@ -703,8 +763,8 @@
       \strng{authornamehash}{e831391bfbb5b294f87dc6ff2eb5e2ee}
       \strng{authorfullhash}{f2eb84ed7df4ac504507c64d045ca5ca}
       \strng{authorfullhashraw}{f2eb84ed7df4ac504507c64d045ca5ca}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International Conference on Pattern Recognition}
@@ -737,8 +797,8 @@
       \strng{authornamehash}{3c3b4a222e891f2367e4386b8aff0a21}
       \strng{authorfullhash}{3c3b4a222e891f2367e4386b8aff0a21}
       \strng{authorfullhashraw}{3c3b4a222e891f2367e4386b8aff0a21}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of biomedical optics}
@@ -789,8 +849,8 @@
       \strng{authorfullhash}{4814ea07b9340467d23a93a3e0ed892e}
       \strng{authorfullhashraw}{4814ea07b9340467d23a93a3e0ed892e}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2023 IEEE International Conference on Robotics and Automation (ICRA)}
@@ -964,8 +1024,8 @@
       \strng{authornamehash}{9d46f7f4eac5528d26b952581e9f9deb}
       \strng{authorfullhash}{9d46f7f4eac5528d26b952581e9f9deb}
       \strng{authorfullhashraw}{9d46f7f4eac5528d26b952581e9f9deb}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{As there is a rapid development of robotics in the field of automation engineering, ego-motion estimation has become a most challenging task. In this review, we presented a model to help describe the PnP problems, and introduced two most common solutions. The P3P solution is the smallest subset of control points that yields a finite number of solutions. The EPnP solution is to reduce the complexity by expressing the n 3D points as a weighted sum of four virtual control points. The former solution is widely applied while there are 3 pairs of corresponding points in the problem. However, in most real cases, the latter is more used.}
@@ -1019,8 +1079,8 @@
       \strng{authornamehash}{bb9455529fc7550eb3834423674e055e}
       \strng{authorfullhash}{bb9455529fc7550eb3834423674e055e}
       \strng{authorfullhashraw}{bb9455529fc7550eb3834423674e055e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We propose a non-iterative solution to the P n P problem--the estimation of the pose of a calibrated camera from n 3D-to-2D point correspondences--whose computational complexity grows linearly with n . This is in contrast to state-of-the-art methods that are O ( n 5) or even O ( n 8), without being more accurate. Our method is applicable for all n 4 and handles properly both planar and non-planar configurations. Our central idea is to express the n 3D points as a weighted sum of four virtual control points. The problem then reduces to estimating the coordinates of these control points in the camera referential, which can be done in O ( n ) time by expressing these coordinates as weighted sum of the eigenvectors of a 12 12 matrix and solving a small constant number of quadratic equations to pick the right weights. Furthermore, if maximal precision is required, the output of the closed-form solution can be used to initialize a Gauss-Newton scheme, which improves accuracy with negligible amount of additional time. The advantages of our method are demonstrated by thorough testing on both synthetic and real-data.}
@@ -1075,8 +1135,8 @@
       \strng{authornamehash}{d6882ae040ea0890f3ed5a536ef44c98}
       \strng{authorfullhash}{066af8474d3d69d0b7cc1a22f741924c}
       \strng{authorfullhashraw}{066af8474d3d69d0b7cc1a22f741924c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{AMBIENT 2014: the Fourth International Conference on Ambient Computing, Applications, Services and Technologies, August 24-28, 2014, Rome, Italy}
@@ -1176,8 +1236,8 @@
       \strng{authornamehash}{be7c10fad458a80162f92444b16ee092}
       \strng{authorfullhash}{be7c10fad458a80162f92444b16ee092}
       \strng{authorfullhashraw}{be7c10fad458a80162f92444b16ee092}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision}
@@ -1210,8 +1270,8 @@
       \strng{authornamehash}{d4952cddf6a4fa239ece415ccd1e5902}
       \strng{authorfullhash}{d4952cddf6a4fa239ece415ccd1e5902}
       \strng{authorfullhashraw}{d4952cddf6a4fa239ece415ccd1e5902}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Frontiers in Psychology}
@@ -1247,8 +1307,8 @@
       \strng{authornamehash}{14bfc642d03959cd706f87bcf8d2d3da}
       \strng{authorfullhash}{14bfc642d03959cd706f87bcf8d2d3da}
       \strng{authorfullhashraw}{14bfc642d03959cd706f87bcf8d2d3da}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
@@ -1484,8 +1544,8 @@
       \strng{authornamehash}{10ada37ca8a81ca4fd22eb5a66ffc88f}
       \strng{authorfullhash}{f5f8120768a079dd3f8fbd5603c57bdf}
       \strng{authorfullhashraw}{f5f8120768a079dd3f8fbd5603c57bdf}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part XIV 16}
@@ -1719,8 +1779,8 @@
       \strng{authornamehash}{2e7f0fae7f1ea88f55a9d8b72149c069}
       \strng{authorfullhash}{f0ccbb0e24d7867339c606a7e82b7c1d}
       \strng{authorfullhashraw}{f0ccbb0e24d7867339c606a7e82b7c1d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE International Conference on Robotics and Automation (ICRA)}
