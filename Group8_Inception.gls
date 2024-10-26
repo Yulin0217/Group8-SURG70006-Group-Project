@@ -29,9 +29,7 @@
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossentry{rmis}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2\delimR 4}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{7}}}%
-\glossentry{ros}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{9}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{sift}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}}}%

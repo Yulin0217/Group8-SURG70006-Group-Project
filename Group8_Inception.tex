@@ -204,7 +204,7 @@ Following keypoint prediction, graph information is constructed for the identifi
 
 
 \subsection{Model Conversion}
-In the process of deploying deep learning models on the NVIDIA Jetson AGX platform, PyTorch models first need to be converted to the \gls{onnx} format to ensure cross-platform compatibility. The \gls{onnx} format is a common intermediate representation that enables model migration and transforming between different frameworks and hardware, so that PyTorch models can be used directly in the embedded environment. \gls{onnx} models can be optimized on the NVIDIA Jetson AGX through TensorRT. TensorRT can improve the inference speed and computational efficiency, especially for embedded platforms. This optimization process includes multi-threading, pipelining, buffer assignment, and network duplication\cite{Jeong2022TensorRTBasedFA}\cite{karumbunathan2022nvidia}. In addition, the use of docker containers for model deployment is required, allowing convenient model training environment transformation in deploying complex models\cite{10283807}.
+In the process of deploying deep learning models on the NVIDIA Jetson AGX platform, PyTorch models first need to be converted to the \gls{onnx} format to ensure cross-platform compatibility. The \gls{onnx} format is a common intermediate representation that enables model migration and transforming between different frameworks and hardware, so that PyTorch models can be used directly in the embedded environment. \gls{onnx} models can be optimized on the NVIDIA Jetson AGX through TensorRT. TensorRT can improve the inference speed and computational efficiency, especially for embedded platforms. This optimization process includes multi-threading, pipelining, buffer assignment, and network duplication\cite{Jeong2022TensorRTBasedFA}\cite{karumbunathan2022nvidia}. In addition, the use of docker containers for model deployment is required, enabling easy transformation of the model training environment for deploying complex models\cite{10283807}.
 
 
 \subsection{Model Integration with da Vinci}
@@ -212,14 +212,19 @@ This system incorporates two visual subsystems(shown in Figure 2)\cite{7989412}.
 
 \begin{figure}[H]
             \centering
-            \includegraphics[width=0.8\textwidth]{model integration.png}
+            \includegraphics[width=0.7\textwidth]{model integration.png}
             \caption{An overview of the proposed system framework for autonomous endomicroscopic scanning and 3D mosaicing\cite{7989412}}
       \end{figure}
 
 
 
 \subsection{Hardware and Software Requirements}
-The project requires the NVIDIA AGX Platform for high-performance computing in applications and autonomous machines. It uses Python, C, and C++ languages, and tool packages like PyTorch for deep learning framework and OpenCV for image processing. Additionally, \gls{ros} provides a flexible framework for developing and running robot software across multiple platforms. Docker helps the deployment and management of applications across different platforms or systems.
+\textbf{NVIDIA AGX Platform Development}: A high-performance computing platform for advanced AI applications in autonomous machines. \\
+\textbf{Languages}: Python, C, C++ \\
+\textbf{Tool Packages}: PyTorch, OpenCV \\
+\textbf{ROS (Robot Operating System)}: A flexible framework for developing and running robot software across multiple systems. \\
+\textbf{Docker}: A platform for deploying and managing applications in lightweight containers using OS-level virtualization.
+
 
 \section{Project Timeline}
 \begin{figure}[H]

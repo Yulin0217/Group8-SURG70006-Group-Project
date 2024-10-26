@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.27)  26 OCT 2024 21:56
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.27)  26 OCT 2024 22:09
  system commands enabled.
 **"c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex"
 ("c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex"
@@ -1087,11 +1087,11 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 File: model integration.png Graphic file (type png)
 <use model integration.png>
 Package luatex.def Info: model integration.png  used on input line 215.
-(luatex.def)             Requested size: 334.60422pt x 181.99611pt.
-<timeline.png, id=339, 1275.76625pt x 172.645pt>
+(luatex.def)             Requested size: 292.77629pt x 159.24844pt.
+<timeline.png, id=338, 1275.76625pt x 172.645pt>
 File: timeline.png Graphic file (type png)
 <use timeline.png>
-Package luatex.def Info: timeline.png  used on input line 227.
+Package luatex.def Info: timeline.png  used on input line 232.
 (luatex.def)             Requested size: 418.25368pt x 56.59894pt.
  [9
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
@@ -1102,12 +1102,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
 ] [11
 warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
 ]
-Overfull \hbox (16.77533pt too wide) in paragraph at lines 290--290
+Overfull \hbox (16.77533pt too wide) in paragraph at lines 295--295
 \TU/lmr/m/n/10 Project, SynID: syn51471789. Avail-able: [][]$\TU/lmtt/m/n/10 https : / / www . synapse . org / Synapse : syn51471789 /
  []
 
 [12] [13] (./Group8_Inception.gls
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 []\TU/lmr/m/n/10 Robot-assisted min-i-mally in-va-sive
  []
 
@@ -1124,19 +1124,19 @@ Package logreq Info: Writing requests to 'Group8_Inception.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 29074 strings out of 476435
+ 29072 strings out of 476435
  100000,1977958 words of node,token memory allocated
  953 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 20 attribute, 119 glue_spec, 20 attribute_list, 2 write, 11 pdf_action nodes
-   avail lists: 1:1,2:1045,3:480,4:256,5:431,6:119,7:8406,8:57,9:716,10:23,11:668
- 50514 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:1017,3:480,4:208,5:431,6:119,7:8406,8:57,9:716,10:23,11:668
+ 50513 multiletter control sequences out of 65536+600000
  51 fonts using 3788247 bytes
  106i,11n,101p,2452b,1382s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on Group8_Inception.pdf (15 pages, 1691460 bytes).
+Output written on Group8_Inception.pdf (15 pages, 1691628 bytes).
 
-PDF statistics: 485 PDF objects out of 1000 (max. 8388607)
- 428 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 131072)
+PDF statistics: 482 PDF objects out of 1000 (max. 8388607)
+ 425 compressed objects within 5 object streams
+ 101 named destinations out of 1000 (max. 131072)
  177 words of extra memory for PDF output out of 10000 (max. 100000000)
 
