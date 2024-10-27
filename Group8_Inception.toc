@@ -7,8 +7,7 @@
 \contentsline {subsection}{\numberline {2.2}Deep Learning Method}{5}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Holistic Methods}{5}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Intermediate Representations}{6}{subsubsection.2.2.2}%
-\contentsline {section}{\numberline {3}Goals and Objectives}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Objectives of the Project}{7}{subsection.3.1}%
+\contentsline {section}{\numberline {3}Objectives of the Project}{7}{section.3}%
 \contentsline {section}{\numberline {4}Proposed Methodology}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Model for Pose Estimation}{7}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Model Conversion}{8}{subsection.4.2}%

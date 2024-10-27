@@ -169,8 +169,8 @@ In 2024, Jihun Park and his team introduced a new occlusion-aware loss function 
 The intermediate representation method makes the task much less difficult by decomposing the complex pose estimation task into multiple, more manageable subtasks. At the same time, intermediate representation models local features so that the model can still maintain high stability in complex scenes. However, this method requires high accuracy in data labelling, and the accumulation of errors may affect the accuracy of the final results due to the inclusion of multiple intermediate steps\cite{xu2023graph}\cite{allan20183}.
 
 
-\section{Goals and Objectives}
-\subsection{Objectives of the Project}
+\section{Objectives of the Project}
+
 This project aims to leverage state-of-the-art deep learning models for pose estimation to accurately determine the rotation and position of surgical instruments present in the surgical environment during \gls{rmis}. The detailed objectives of the project are as follows:
 
 \begin{enumerate}
@@ -183,8 +183,8 @@ This project aims to leverage state-of-the-art deep learning models for pose est
 
 
 
-\item \textbf{Robust Pose Estimation}
-\\This project also needs to devise novel approaches to ensure accurate and robust pose estimation in the presence of challenges such as partial tool visibility, occlusions, and other variations encountered during surgery. 
+\item \textbf{Model Integration with da Vinci}
+\\The project will integrate the developed model with the da Vinci surgical system, using both endomicroscope and stereo laparoscope imaging to generate accurate 3D spatial information of surgical instruments. The dVRK-ROS bridge and CISST/SAW controller will be used to achieve real-time, dynamic control of the da Vinci robot based on the pose estimation outputs.
 
 \item \textbf{Performance Evaluation}
 
