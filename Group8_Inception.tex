@@ -171,7 +171,7 @@ The intermediate representation method makes the task much less difficult by dec
 
 \section{Objectives of the Project}
 
-This project aims to leverage deep learning models for pose estimation to accurately determine the rotation and position of surgical instruments present in the surgical environment during \gls{rmis}. The detailed objectives of the project are as follows:
+The project will integrate the developed model with the da Vinci surgical system, using stereo endoscope to generate 3D spatial information of surgical instruments. The two-PC setup allows tasks to be executed more efficiently: the first PC is responsible for image processing tasks, including pose estimation, depth reconstruction, and 3D fusion, while the second PC, receiving processed signals via TCP/IP, controls the da Vinci robot in real-time. The dVRK-ROS bridge and CISST/SAW controller will be used to achieve real-time, dynamic control of the da Vinci robot based on the pose estimation outputs.
 
 \begin{enumerate}
 
@@ -208,7 +208,7 @@ In the process of deploying deep learning models on the NVIDIA Jetson AGX platfo
 
 
 \subsection{Model Integration with da Vinci}
-This system incorporates two visual subsystems (shown in Figure 2)\cite{7989412}. The endomicroscope system generates a high-resolution, large-area 2D mosaic by integrating multiple microscopic images. The stereo laparoscope system captures 3D spatial information through stereoscopic imaging. These two visual systems enable high-resolution 3D imaging and precise pose estimation. Initially, the system feasibility is verified using a marker-based method for pose estimation, followed by the implementation of a marker-less approach to generate accurate 3D coordinates. Trajectory planning is performed by combining the 3D coordinate information with the stereoscopic data from the Stereo Laparoscope System, ultimately achieving visual control to adjust the probe’s pose dynamically. The dVRK-ROS bridge establishes a connection between the dVRK system and the ROS (Robot Operating System). The CISST/SAW controller then operates the dVRK controller, enabling continuous control of the da Vinci robot.
+This system incorporates a stereo endoscope system (shown in Figure 2) \cite{7989412}. The systems enable high-resolution 3D imaging and precise pose estimation. Initially, the system feasibility is verified using a marker-based method for pose estimation, followed by the implementation of a marker-less approach to generate accurate 3D coordinates. Trajectory planning is performed by combining the 3D coordinate information with the stereoscopic data from the Stereo Laparoscope System, ultimately achieving visual control to adjust the probe’s pose dynamically. The setup distributes tasks across two PCs: the first PC handles all image processing, including pose estimation, depth reconstruction, and 3D fusion, and transmits signals via TCP/IP to a second PC. The second PC manages robotic control. The dVRK-ROS bridge establishes a connection between the dVRK system and the ROS (Robot Operating System), while the CISST/SAW controller operates the dVRK controller, enabling continuous control of the da Vinci robot.
 
 \begin{figure}[H]
             \centering
