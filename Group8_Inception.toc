@@ -14,8 +14,8 @@
 \contentsline {subsection}{\numberline {4.3}Model Integration with da Vinci}{8}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Hardware and Software Requirements}{9}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Project Timeline}{10}{section.5}%
-\contentsline {section}{\numberline {6}Risk Assessment}{11}{section.6}%
-\contentsline {section}{\numberline {7}Project Management}{12}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Progress Monitoring}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Rules of Group Members}{12}{subsection.7.2}%
-\contentsline {section}{Glossary}{15}{section*.3}%
+\contentsline {section}{\numberline {6}Risk Assessment}{10}{section.6}%
+\contentsline {section}{\numberline {7}Project Management}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Progress Monitoring}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Rules of Group Members}{11}{subsection.7.2}%
+\contentsline {section}{Glossary}{14}{section*.3}%

@@ -212,21 +212,23 @@ INPUT ./model integration.png
 INPUT ./model integration.png
 INPUT ./timeline.png
 INPUT ./timeline.png
+INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy7.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT ./Group8_Inception.gls
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc

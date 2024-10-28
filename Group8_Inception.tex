@@ -171,7 +171,7 @@ The intermediate representation method makes the task much less difficult by dec
 
 \section{Objectives of the Project}
 
-The project will integrate the developed model with the da Vinci surgical system, using stereo endoscope to generate 3D spatial information of surgical instruments. The two-PC setup allows tasks to be executed more efficiently: the first PC is responsible for image processing tasks, including pose estimation, depth reconstruction, and 3D fusion, while the second PC, receiving processed signals via TCP/IP, controls the da Vinci robot in real-time. The dVRK-ROS bridge and CISST/SAW controller will be used to achieve real-time, dynamic control of the da Vinci robot based on the pose estimation outputs.
+This project aims to leverage deep learning models for pose estimation to accurately determine the rotation and position of surgical instruments present in the surgical environment during \gls{rmis}. The detailed objectives of the project are as follows:
 
 \begin{enumerate}
 
@@ -184,7 +184,7 @@ The project will integrate the developed model with the da Vinci surgical system
 
 
 \item \textbf{Model Integration with da Vinci}
-\\The project will integrate the developed model with the da Vinci surgical system, using both endomicroscope and stereo laparoscope imaging to generate accurate 3D spatial information of surgical instruments. The dVRK-ROS bridge and CISST/SAW controller will be used to achieve real-time, dynamic control of the da Vinci robot based on the pose estimation outputs.
+\\The project will integrate the developed model with the da Vinci surgical system, using stereo endoscope to generate 3D spatial information of surgical instruments. The two-PC setup allows tasks to be executed more efficiently: the first PC is responsible for image processing tasks, including pose estimation, depth reconstruction, and 3D fusion, while the second PC, receiving processed signals via TCP/IP, controls the da Vinci robot in real-time. The dVRK-ROS bridge and CISST/SAW controller will be used to achieve real-time, dynamic control of the da Vinci robot based on the pose estimation outputs.
 
 \item \textbf{Performance Evaluation}
 
@@ -236,32 +236,34 @@ This system incorporates a stereo endoscope system (shown in Figure 2) \cite{798
 \section{Risk Assessment}
 \begin{table}[H]
       \centering
-      \renewcommand{\arraystretch}{1.5} 
+      \renewcommand{\arraystretch}{1.1} % 减少行间距
+      \scriptsize % 使用更小的字体
       \resizebox{\textwidth}{!}{
-      \begin{tabular}{| >{\centering\arraybackslash}m{4cm} | >{\centering\arraybackslash}m{5cm} | >{\centering\arraybackslash}m{2.5cm} | >{\centering\arraybackslash}m{2.5cm} |}
-      \hline
-      \normalsize\textbf{Risk} & \normalsize\textbf{Mitigation Strategy} & \normalsize\textbf{Likelihood} & \normalsize\textbf{Impact} \\ 
-      \hline
-      \normalsize Pose estimation unstable in complex scenes (e.g., occlusion, dynamic background) & \normalsize Optimizing the dataset with more occlusion scene data & \normalsize High & \normalsize Very High \\ 
-      \hline
-      \normalsize Low frame rates & \normalsize Optimizing model efficiency and investing in high-quality hardware & \normalsize High & \normalsize Medium \\ 
-      \hline
-      \normalsize Model computation time is too long for real-time simulation & \normalsize Optimizing model efficiency and using hardware acceleration & \normalsize High & \normalsize Medium \\ 
-      \hline
-      \normalsize Reliance on specific deep learning frameworks, leading to migration difficulties & \normalsize Reducing binding to specific frameworks & \normalsize Medium & \normalsize High \\ 
-      \hline
-      \normalsize Data damage or lost & \normalsize Using GitHub or external storage devices to make backup & \normalsize Medium & \normalsize Very High \\ 
-      \hline
-      \normalsize Data privacy & \normalsize Implementing robust data encryption and complying with data protection laws such as GDPR & \normalsize Medium & \normalsize Very High \\ 
-      \hline
-      \normalsize Ethical and regulatory & \normalsize Consulting with regulatory experts and following related regulations & \normalsize Very Low & \normalsize High \\ 
-      \hline
-      \normalsize Timeline delay & \normalsize Making a detailed timeline and a thorough monitoring plan & \normalsize High & \normalsize High \\ 
-      \hline
+      \begin{tabular}{|>{\centering\arraybackslash}m{3.2cm} | >{\centering\arraybackslash}m{4cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm}|}
+          \hline
+          \textbf{Risk} & \textbf{Mitigation Strategy} & \textbf{Likelihood} & \textbf{Impact} \\ 
+          \hline
+          Pose estimation unstable in complex scenes (e.g., occlusion, dynamic background) & Optimizing the dataset with more occlusion scene data & High & Very High \\ 
+          \hline
+          Low frame rates & Optimizing model efficiency and investing in high-quality hardware & High & Medium \\ 
+          \hline
+          Model computation time is too long for real-time simulation & Optimizing model efficiency and using hardware acceleration & High & Medium \\ 
+          \hline
+          Reliance on specific deep learning frameworks, leading to migration difficulties & Reducing binding to specific frameworks & Medium & High \\ 
+          \hline
+          Data damage or lost & Using GitHub or external storage devices to make backup & Medium & Very High \\ 
+          \hline
+          Data privacy & Implementing robust data encryption and complying with data protection laws such as GDPR & Medium & Very High \\ 
+          \hline
+          Ethical and regulatory & Consulting with regulatory experts and following related regulations & Very Low & High \\ 
+          \hline
+          Timeline delay & Making a detailed timeline and a thorough monitoring plan & High & High \\ 
+          \hline
       \end{tabular}
       }
       \caption{Risk Assessment Table}
-\end{table}
+  \end{table}
+  
 
 
 \section{Project Management}
