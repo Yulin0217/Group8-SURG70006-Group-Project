@@ -1,13 +1,14 @@
 # Fdb version 4
-["biber Group8_Inception"] 1730075581.62009 "Group8_Inception.bcf" "Group8_Inception.bbl" "Group8_Inception" 1730118408.59017 0
-  "Group8_Inception.bcf" 1730118408 113033 cebccf4a0e99857b0b6f5c35dd44f962 "lualatex"
+["biber Group8_Inception"] 1730125684.22652 "Group8_Inception.bcf" "Group8_Inception.bbl" "Group8_Inception" 1730125740.92395 0
+  "Group8_Inception.bcf" 1730125740 112907 bb703d68e15f103933cb34a5a386f867 "lualatex"
   "Reference.bib" 1729892309 26265 ce36a37dbcedd451bd8de6aa228df69a ""
   (generated)
   "Group8_Inception.bbl"
   "Group8_Inception.blg"
   (rewritten before read)
-["lualatex"] 1730118403.97808 "c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex" "Group8_Inception.pdf" "Group8_Inception" 1730118408.591 0
+["lualatex"] 1730125736.06312 "c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex" "Group8_Inception.pdf" "Group8_Inception" 1730125740.92467 0
   "6DoF.png" 1729621702 581256 46fd9505949b8d25e9cc85b63b112018 ""
+  "An overview of the proposed system framework.png" 1730125654 602714 864170fb7ae97242d5edc7c3996548b4 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1714195937 81829 7784c92a83dab4ed40be5029b45c2170 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1714195362 128402 94b8091b6774a63fb6e20d81d3a04216 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1714195845 136304 6a78faae1913414ebb9d44a20dd3a4b0 ""
@@ -18,15 +19,15 @@
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc" 1714942836 128290 488593a9e8f9080b11ff3aa821c5ca89 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1714366197 128138 30a4466a06d4c255d6ba97556ce2f4d9 ""
   "C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc" 1714199372 120239 8179dce90495323ce4884623b093b6b2 ""
-  "Group8_Inception.aux" 1730118408 12380 85c2c59d1398195bf41ce1061fa0de97 "lualatex"
-  "Group8_Inception.bbl" 1730075587 80552 7738038ec3b3a1a21b4d64d80d202b63 "biber Group8_Inception"
-  "Group8_Inception.gls" 1730118406 2116 010723671455495c6c03807424b94dbe ""
-  "Group8_Inception.out" 1730118408 3496 a1663a3d97607f6298a66e9ae229f028 "lualatex"
-  "Group8_Inception.run.xml" 1730118408 2520 18866be784f10e93dbb8fb8a8b87c6b9 "lualatex"
-  "Group8_Inception.tex" 1730118397 27298 50ec8d4eb441d6152aaeaf889c5cbc7b ""
-  "Group8_Inception.toc" 1730118408 1772 167ed6cbba33980a2da2216d0109e11c "lualatex"
+  "Group8_Inception.aux" 1730125740 12175 21071e974198eefab804b587cdc295d3 "lualatex"
+  "Group8_Inception.bbl" 1730125719 80552 7738038ec3b3a1a21b4d64d80d202b63 "biber Group8_Inception"
+  "Group8_Inception.gls" 1730125738 2116 010723671455495c6c03807424b94dbe ""
+  "Group8_Inception.out" 1730125740 3496 a1663a3d97607f6298a66e9ae229f028 "lualatex"
+  "Group8_Inception.run.xml" 1730125740 2520 18866be784f10e93dbb8fb8a8b87c6b9 "lualatex"
+  "Group8_Inception.tex" 1730125730 27255 5991b299a0787c233e6f73c89364004d ""
+  "Group8_Inception.toc" 1730125740 1772 167ed6cbba33980a2da2216d0109e11c "lualatex"
   "Imperial_College_London_new_logo.png" 1729556990 147431 5bf99ac70e95b7277bc8547f0d60dc13 ""
-  "c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex" 1730118397 27298 50ec8d4eb441d6152aaeaf889c5cbc7b ""
+  "c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex" 1730125730 27255 5991b299a0787c233e6f73c89364004d ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1714189413 64684 c6f5a48921f83c1a51d9384f785ddd5a ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1714189413 111240 1d60e9def74b1102bb4defa7cb772ee3 ""
   "c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1714189413 118828 5d91d27a335c65bda4818de63abc25ce ""
@@ -231,7 +232,6 @@
   "c:/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1714189502 13565 50482dad4c221a79dbdbb982122baf8c ""
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1714191777 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt" 1714191931 12263825 ac6769c6254b9d7e39cbf5a2042017e8 ""
-  "model integration.png" 1729892309 602714 864170fb7ae97242d5edc7c3996548b4 ""
   "timeline.png" 1729863493 146154 ff2ac0b72f35062110ad2953fb1475b4 ""
   (generated)
   "Group8_Inception.aux"

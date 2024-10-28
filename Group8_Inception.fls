@@ -208,8 +208,8 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT Group8_Inception.toc
 INPUT ./6DoF.png
 INPUT ./6DoF.png
-INPUT ./model integration.png
-INPUT ./model integration.png
+INPUT ./An overview of the proposed system framework.png
+INPUT ./An overview of the proposed system framework.png
 INPUT ./timeline.png
 INPUT ./timeline.png
 INPUT C:/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc

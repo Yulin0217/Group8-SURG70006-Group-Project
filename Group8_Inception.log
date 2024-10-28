@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.27)  28 OCT 2024 12:26
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.4.27)  28 OCT 2024 14:28
  system commands enabled.
 **"c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex"
 ("c:/Users/Yulin/OneDrive/桌面/Homework/IC/Group Project/Group-8/Group8_Inception.tex"
@@ -1083,19 +1083,19 @@ Package luatex.def Info: 6Dof.png  used on input line 127.
  [3
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 <./6DoF.png>] [4] [5] [6] [7] [8]
-<model integration.png, id=330, 891.33pt x 484.81125pt>
-File: model integration.png Graphic file (type png)
-<use model integration.png>
-Package luatex.def Info: model integration.png  used on input line 215.
+<An overview of the proposed system framework.png, id=330, 891.33pt x 484.81125pt>
+File: An overview of the proposed system framework.png Graphic file (type png)
+<use An overview of the proposed system framework.png>
+Package luatex.def Info: An overview of the proposed system framework.png  used on input line 215.
 (luatex.def)             Requested size: 292.77629pt x 159.24844pt.
-<timeline.png, id=333, 1275.76625pt x 172.645pt>
+<timeline.png, id=331, 1275.76625pt x 172.645pt>
 File: timeline.png Graphic file (type png)
 <use timeline.png>
 Package luatex.def Info: timeline.png  used on input line 232.
 (luatex.def)             Requested size: 418.25368pt x 56.59894pt.
  [9
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
-<./model integration.png>] [10
+<./An overview of the proposed system framework.png>] [10
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
@@ -1133,10 +1133,10 @@ Here is how much of LuaTeX's memory you used:
  53 fonts using 4051623 bytes
  106i,11n,101p,2452b,1382s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on Group8_Inception.pdf (15 pages, 1701797 bytes).
+Output written on Group8_Inception.pdf (15 pages, 1701685 bytes).
 
-PDF statistics: 491 PDF objects out of 1000 (max. 8388607)
- 428 compressed objects within 5 object streams
+PDF statistics: 488 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
  100 named destinations out of 1000 (max. 131072)
  169 words of extra memory for PDF output out of 10000 (max. 100000000)
 
