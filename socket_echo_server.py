@@ -5,7 +5,7 @@ import sys
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to the port
-server_address = ('127.0.0.1', 10000)
+server_address = ('172.26.99.133', 10000)
 print('starting up on %s port %s' % server_address, file=sys.stderr)
 sock.bind(server_address)
 
@@ -20,17 +20,14 @@ while True:
     try:
         print('connection from', client_address, file=sys.stderr)
 
-        # Receive the data in small chunks and retransmit it
-        while True:
-            data = connection.recv(16)
-            if data:
-                print('received "%s"' % data.decode(), file=sys.stderr)
-                print('sending data back to the client', file=sys.stderr)
-                connection.sendall(data)
-            else:
-                print('no more data from', client_address, file=sys.stderr)
-                break
+        # Send a single array of displacement values and then stop
+        displacement = [0.005, 0.005, 0.005]
+        message = ','.join(map(str, displacement))  # Convert list to "0.005,0.005,0.005"
+        print(f'sending displacement: {message}', file=sys.stderr)
+        connection.sendall(message.encode())
 
     finally:
-        # Clean up the connection
+        # Close the connection after sending the data
+        print('closing connection', file=sys.stderr)
         connection.close()
+        break  # Exit the server loop to stop the server after sending one message
