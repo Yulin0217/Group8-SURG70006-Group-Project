@@ -5,26 +5,38 @@ import time
 # Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Connect the socket to the port where the server is listening
-server_address = ('172.30.28.152', 10000)
-print('connecting to %s port %s' % server_address, file=sys.stderr)
-sock.connect(server_address)
+# Bind the socket to the port
+server_address = ('172.26.99.133', 10000)
+print('starting up on %s port %s' % server_address, file=sys.stderr)
+sock.bind(server_address)
 
-try:
-    while True:
-        for i in range(1, 101):
-            # Send data
-            message = str(i)
-            print('sending "%s"' % message, file=sys.stderr)
-            sock.sendall(message.encode())
+# Listen for incoming connections
+sock.listen(1)
 
-            # Wait for the response
-            data = sock.recv(16)
-            print('received "%s"' % data.decode(), file=sys.stderr)
+while True:
+    # Wait for a connection
+    print('waiting for a connection', file=sys.stderr)
+    connection, client_address = sock.accept()
 
-            # Optional: add a short delay for readability
-            time.sleep(0.5)
+    try:
+        print('connection from', client_address, file=sys.stderr)
 
-finally:
-    print('closing socket', file=sys.stderr)
-    sock.close()
+        # Send (x, y, z) displacement data in a loop
+        x, y, z = 0, 0, 0
+        while True:
+            # Format displacement data as a comma-separated string
+            message = f"{x},{y},{z}"
+            print(f'sending displacement: {message}', file=sys.stderr)
+            connection.sendall(message.encode())
+
+            # Update (x, y, z) values (increment as a demonstration)
+            x += 1
+            y += 2
+            z += 3
+
+            # Delay for readability (optional)
+            time.sleep(1)
+
+    finally:
+        # Clean up the connection
+        connection.close()
