@@ -27,6 +27,8 @@ import rospy
 import numpy
 import PyKDL
 import argparse
+import socket
+
 
 # print with node id
 def print_id(message):
@@ -190,7 +192,7 @@ class example_application:
         print_id('servo_cp complete in %2.2f seconds (expected %2.2f)' % (actual_duration.to_sec(), duration))
 
     # direct cartesian control example
-    def run_move_cp(self):
+    def run_move_cp(self, offset_x, offset_y, offset_z):
         print_id('starting move_cp')
         self.prepare_cartesian()
 
@@ -202,33 +204,35 @@ class example_application:
         goal.p = self.arm.setpoint_cp().p
         goal.M = self.arm.setpoint_cp().M
 
-        # motion parameters
-        amplitude = 0.01 # 1 mm
+        # # motion parameters
+        # amplitude = 0.01 # 1 mm
 
         # first motion
-        goal.p[0] =  initial_cartesian_position.p[0] - amplitude
-        goal.p[1] =  initial_cartesian_position.p[1]
+        goal.p[0] =  initial_cartesian_position.p[0] + offset_y
+        goal.p[1] =  initial_cartesian_position.p[1] + offset_x
+        goal.p[2] =  initial_cartesian_position.p[2] + offset_z
+
         self.arm.move_cp(goal).wait()
-        # second motion
-        goal.p[0] =  initial_cartesian_position.p[0] + amplitude
-        goal.p[1] =  initial_cartesian_position.p[1]
-        self.arm.move_cp(goal).wait()
-        # back to initial position
-        goal.p[0] =  initial_cartesian_position.p[0]
-        goal.p[1] =  initial_cartesian_position.p[1]
-        self.arm.move_cp(goal).wait()
-        # first motion
-        goal.p[0] =  initial_cartesian_position.p[0]
-        goal.p[1] =  initial_cartesian_position.p[1] - amplitude
-        self.arm.move_cp(goal).wait()
-        # second motion
-        goal.p[0] =  initial_cartesian_position.p[0]
-        goal.p[1] =  initial_cartesian_position.p[1] + amplitude
-        self.arm.move_cp(goal).wait()
-        # back to initial position
-        goal.p[0] =  initial_cartesian_position.p[0]
-        goal.p[1] =  initial_cartesian_position.p[1]
-        self.arm.move_cp(goal).wait()
+        # # second motion
+        # goal.p[0] =  initial_cartesian_position.p[0] + amplitude
+        # goal.p[1] =  initial_cartesian_position.p[1]
+        # self.arm.move_cp(goal).wait()
+        # # back to initial position
+        # goal.p[0] =  initial_cartesian_position.p[0]
+        # goal.p[1] =  initial_cartesian_position.p[1]
+        # self.arm.move_cp(goal).wait()
+        # # first motion
+        # goal.p[0] =  initial_cartesian_position.p[0]
+        # goal.p[1] =  initial_cartesian_position.p[1] - amplitude
+        # self.arm.move_cp(goal).wait()
+        # # second motion
+        # goal.p[0] =  initial_cartesian_position.p[0]
+        # goal.p[1] =  initial_cartesian_position.p[1] + amplitude
+        # self.arm.move_cp(goal).wait()
+        # # back to initial position
+        # goal.p[0] =  initial_cartesian_position.p[0]
+        # goal.p[1] =  initial_cartesian_position.p[1]
+        # self.arm.move_cp(goal).wait()
         print_id('move_cp complete')
 
     # main method
@@ -241,6 +245,31 @@ class example_application:
         self.run_move_cp()
 
 if __name__ == '__main__':
+    
+    ##################     Create a TCP/IP socket   ####################
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    # Connect the socket to the server's address and port
+    server_address = ('172.30.28.152', 10000)
+    print >>sys.stderr, 'connecting to %s port %s' % server_address
+    sock.connect(server_address)
+
+    try:
+
+        data = sock.recv(32)
+        if data:
+            # Split received data by commas and convert to integers
+            displacement = [float(value) for value in data.decode('utf-8').split(',')]
+            print >>sys.stderr, 'received displacement:', displacement
+        else:
+            print >>sys.stderr, 'no more data from server'
+        
+
+    finally:
+        print >>sys.stderr, 'closing socket'
+        sock.close()
+    
+    ###########################################################################################
     # ros init node so we can use default ros arguments (e.g. __ns:= for namespace)
     rospy.init_node('dvrk_arm_test', anonymous=True)
     # strip ros arguments
@@ -261,4 +290,9 @@ if __name__ == '__main__':
 
     application = example_application()
     application.configure('PSM1', 0.014)
-    application.run()
+    # application.run()
+
+    offset_x = displacement[0]
+    offset_y = displacement[1] # 5mm
+    offset_z = displacement[2]
+    returned_frame_psm1 = application.run_move_cp(offset_x, offset_y, offset_z)
