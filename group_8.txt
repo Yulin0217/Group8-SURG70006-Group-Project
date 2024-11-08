@@ -1,0 +1,27 @@
+### 1.How to install pytorch in the docker
+
+# NVIDIA Pytorch: https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
+
+pip install torch-2.3.0-cp310-cp310-linux_aarch64.whl
+pip install torchvision-0.18.0a0+6043bc2-cp310-cp310-linux_aarch64.whl
+pip install torchaudio-2.3.0+952ea74-cp310-cp310-linux_aarch64.whl
+
+### 1.1 If show error:
+#>> import torch
+#Traceback (most recent call last):
+#  File "<stdin>", line 1, in <module>
+#  File "/home/holoscan/.local/lib/python3.10/site-packages/torch/__init__.py", line 236, in #<module>
+ #   _load_global_deps()
+ # File "/home/holoscan/.local/lib/python3.10/site-packages/torch/__init__.py", line 195, in #_load_global_deps
+#    raise err
+#  File "/home/holoscan/.local/lib/python3.10/site-packages/torch/__init__.py", line 176, in #_load_global_deps
+#    ctypes.CDLL(lib_path, mode=ctypes.RTLD_GLOBAL)
+ # File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+ #   self._handle = _dlopen(self._name, mode)
+#OSError: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+
+
+### use command:
+1: docker ps ##find docker name
+1: docker exec -u root -it <docker name> /bin/bash
+2: apt-get update && apt-get install -y libopenmpi-dev
