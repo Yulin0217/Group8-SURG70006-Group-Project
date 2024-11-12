@@ -7,17 +7,21 @@ import time
 import socket
 import keyboard
 
-def pose_estimation(frame, aruco_dict_type, matrix_coefficients, distortion_coefficients, previous_tvec, connection):
+
+def pose_estimation(frame, aruco_dict_type, matrix_coefficients, distortion_coefficients, previous_tvec, previous_rvec,
+                    connection):
     '''
     frame - Frame from the video stream
     matrix_coefficients - Intrinsic matrix of the calibrated camera
     distortion_coefficients - Distortion coefficients associated with your camera
     previous_tvec - Translation vector from the previous detection
+    previous_rvec - Rotation vector from the previous detection
     connection - TCP socket connection for sending data
 
     return:
     frame - The frame with the axis drawn on it (with detected markers and axis if detected)
     new_tvec - The detected translation vector for calculating offset
+    new_rvec - The detected rotation vector for calculating rotation offset
     '''
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -32,6 +36,7 @@ def pose_estimation(frame, aruco_dict_type, matrix_coefficients, distortion_coef
     )
 
     new_tvec = None  # Placeholder for current translation vector
+    new_rvec = None  # Placeholder for current rotation vector
 
     # If markers are detected
     if len(corners) > 0:
@@ -41,21 +46,33 @@ def pose_estimation(frame, aruco_dict_type, matrix_coefficients, distortion_coef
                 corners[i], 0.04, matrix_coefficients, distortion_coefficients
             )
             new_tvec = tvec  # Store the latest translation vector
+            new_rvec = rvec  # Store the latest rotation vector
 
-            # Calculate and send the translation difference if there was a previous tvec
-            if previous_tvec is not None:
+            # Calculate and send the translation and rotation differences if there was a previous tvec and rvec
+            if previous_tvec is not None and previous_rvec is not None:
                 translation_difference = (new_tvec - previous_tvec).flatten()
                 print("Translation difference:", translation_difference)
 
-                # Send translation difference to the client
-                message = ','.join(map(str, translation_difference))
+                # Convert rotation vectors to rotation matrices
+                rotation_matrix_current, _ = cv2.Rodrigues(rvec)
+                rotation_matrix_previous, _ = cv2.Rodrigues(previous_rvec)
+
+                # Calculate rotation difference as a rotation matrix
+                rotation_difference_matrix = np.dot(rotation_matrix_previous.T, rotation_matrix_current)
+                print("Rotation difference matrix:\n", rotation_difference_matrix)
+
+                # Flatten and concatenate translation and rotation for sending
+                message = ','.join(map(str, translation_difference)) + ',' + ','.join(
+                    map(str, rotation_difference_matrix.flatten()))
+
+                # Send translation and rotation difference to the client
                 connection.sendall(message.encode())
 
             # Draw a square around the markers and axis
             cv2.aruco.drawDetectedMarkers(frame, corners)
             cv2.aruco.drawAxis(frame, matrix_coefficients, distortion_coefficients, rvec, tvec, 0.01)
 
-    return frame, new_tvec
+    return frame, new_tvec, new_rvec
 
 
 if __name__ == '__main__':
@@ -89,7 +106,7 @@ if __name__ == '__main__':
 
     # Create a TCP/IP socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_address = ('192.168.0.101', 10000)
+    server_address = ('172.26.211.137', 10000)
     sock.bind(server_address)
     sock.listen(1)
     print('Waiting for a connection...')
@@ -98,6 +115,7 @@ if __name__ == '__main__':
 
     detect_next = False  # Flag to control detection
     previous_tvec = None  # Initialize previous translation vector as None
+    previous_rvec = None  # Initialize previous rotation vector as None
 
     try:
         while True:
@@ -107,8 +125,10 @@ if __name__ == '__main__':
 
             # Perform pose estimation only if detect_next is True
             if detect_next:
-                output, new_tvec = pose_estimation(frame, aruco_dict_type, k, d, previous_tvec, connection)
+                output, new_tvec, new_rvec = pose_estimation(frame, aruco_dict_type, k, d, previous_tvec, previous_rvec,
+                                                             connection)
                 previous_tvec = new_tvec  # Update previous_tvec with the latest translation vector
+                previous_rvec = new_rvec  # Update previous_rvec with the latest rotation vector
                 detect_next = False  # Reset flag after detection
             else:
                 output = frame  # Show the original frame if not detecting
@@ -121,7 +141,7 @@ if __name__ == '__main__':
                 break
             elif keyboard.is_pressed('enter'):  # Press "Enter" for next detection
                 detect_next = True
-                time.sleep(0.1)
+                time.sleep(0.3)
 
             if cv2.waitKey(1) == 27:
                 break
