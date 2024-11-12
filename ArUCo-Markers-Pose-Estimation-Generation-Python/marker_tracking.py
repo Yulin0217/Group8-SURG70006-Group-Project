@@ -4,6 +4,7 @@ import sys
 from utils import ARUCO_DICT
 import argparse
 import time
+import keyboard
 
 def pose_estimation(frame, aruco_dict_type, matrix_coefficients, distortion_coefficients, previous_tvec):
     '''
@@ -98,13 +99,21 @@ if __name__ == '__main__':
 
         # Display the frame
         cv2.imshow('Estimated Pose', output)
-
-        # Check for keyboard input
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord('q'):  # Press 'q' to quit
+        # Check keyboard input
+        if keyboard.is_pressed('q'):  # Press "q" to quit
             break
-        elif key == 13:  # Press Enter to perform the next detection
+        elif keyboard.is_pressed('enter'):  # Press "Enter" for next detection
             detect_next = True
+            time.sleep(0.1)
+
+        if cv2.waitKey(1) == 27:
+            break
+        # # Check for keyboard input
+        # key = cv2.waitKey(30) & 0xFF
+        # if key == ord('q'):  # Press 'q' to quit
+        #     break
+        # elif key == 13:  # Press Enter to perform the next detection
+        #     detect_next = True
 
     video.release()
     cv2.destroyAllWindows()
