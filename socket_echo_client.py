@@ -14,13 +14,24 @@ try:
         # Receive data from server
         data = sock.recv(1024)
         if data:
-            # Split received data by commas and convert to integers
-            displacement = [float(value) for value in data.decode('utf-8').split(',')]
-            print >>sys.stderr, 'received displacement:', displacement
+            # Split received data by commas and convert to floats
+            values = [float(value) for value in data.decode('utf-8').split(',')]
+            
+            # Assuming the first three values are the translation differences
+            translation_difference = values[:3]
+            # The next nine values are the rotation matrix (3x3)
+            rotation_matrix = values[3:]
+            rotation_matrix = [rotation_matrix[:3], rotation_matrix[3:6], rotation_matrix[6:]]
+            
+            # Print the received translation and rotation matrices
+            print >>sys.stderr, 'Received translation difference:', translation_difference
+            print >>sys.stderr, 'Received rotation matrix:'
+            for row in rotation_matrix:
+                print >>sys.stderr, row
         else:
-            print >>sys.stderr, 'no more data from server'
+            print >>sys.stderr, 'No more data from server'
             break
 
 finally:
-    print >>sys.stderr, 'closing socket'
+    print >>sys.stderr, 'Closing socket'
     sock.close()
