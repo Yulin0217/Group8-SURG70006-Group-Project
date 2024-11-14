@@ -1,0 +1,50 @@
+{
+    "spellright.documentTypes": [
+        "latex"
+    ],
+    "latex-workshop.latex.build.forceRecipeUsage": true,
+    "latex-workshop.latex.build.maxBuilds": 5,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (lualatex + biber + shell-escape)",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],
+
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lualatex",
+            "command": "lualatex",
+            "args": [
+                "--shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-pdf",
+                "-lualatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "%DOC%"
+            ]
+        }
+    ]
+}
