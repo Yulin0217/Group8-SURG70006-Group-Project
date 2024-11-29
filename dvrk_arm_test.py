@@ -28,6 +28,8 @@ import numpy
 import PyKDL
 import argparse
 import socket
+import crtk
+
 
 
 # print with node id
@@ -38,13 +40,47 @@ def print_id(message):
 class example_application:
 
     # configuration
-    def configure(self, robot_name, expected_interval):
-        print_id('configuring dvrk_arm_test for %s' % robot_name)
+    # def configure(self, ral, robot_name, expected_interval):
+    #     print_id('configuring dvrk_arm_test for %s' % robot_name)
+    #     self.expected_interval = expected_interval
+    #     self.arm = dvrk.arm(arm_name = robot_name,
+    #                         expected_interval = expected_interval)
+    
+    # configuration
+    def configure(self, ral, arm_name, expected_interval):
+        print('configuring dvrk_arm_test for {}'.format(arm_name))
+        self.ral = ral
         self.expected_interval = expected_interval
-        self.arm = dvrk.arm(arm_name = robot_name,
+        self.arm = dvrk.arm(ral = ral,
+                            arm_name = arm_name,
                             expected_interval = expected_interval)
 
     # homing example
+    # def home(self):
+    #     print_id('starting enable')
+    #     if not self.arm.enable(10):
+    #         sys.exit('failed to enable within 10 seconds')
+    #     print_id('starting home')
+    #     if not self.arm.home(10):
+    #         sys.exit('failed to home within 10 seconds')
+    #     # get current joints just to set size
+    #     print_id('move to starting position')
+    #     goal = numpy.copy(self.arm.setpoint_jp())
+    #     # go to zero position, for PSM and ECM make sure 3rd joint is past cannula
+    #     goal.fill(0)
+    #     if ((self.arm.name() == 'PSM1') or (self.arm.name() == 'PSM2')
+    #         or (self.arm.name() == 'PSM3') or (self.arm.name() == 'ECM')):
+    #         goal[2] = 0.12
+    #     # move and wait
+    #     print_id('moving to starting position')
+    #     self.arm.move_jp(goal).wait()
+    #     # try to move again to make sure waiting is working fine, i.e. not blocking
+    #     print_id('testing move to current position')
+    #     move_handle = self.arm.move_jp(goal)
+    #     time.sleep(1.0) # add some artificial latency on this side
+    #     move_handle.wait()
+    #     print_id('home complete')
+
     def home(self):
         print_id('starting enable')
         if not self.arm.enable(10):
@@ -52,23 +88,6 @@ class example_application:
         print_id('starting home')
         if not self.arm.home(10):
             sys.exit('failed to home within 10 seconds')
-        # get current joints just to set size
-        print_id('move to starting position')
-        goal = numpy.copy(self.arm.setpoint_jp())
-        # go to zero position, for PSM and ECM make sure 3rd joint is past cannula
-        goal.fill(0)
-        if ((self.arm.name() == 'PSM1') or (self.arm.name() == 'PSM2')
-            or (self.arm.name() == 'PSM3') or (self.arm.name() == 'ECM')):
-            goal[2] = 0.12
-        # move and wait
-        print_id('moving to starting position')
-        self.arm.move_jp(goal).wait()
-        # try to move again to make sure waiting is working fine, i.e. not blocking
-        print_id('testing move to current position')
-        move_handle = self.arm.move_jp(goal)
-        time.sleep(1.0) # add some artificial latency on this side
-        move_handle.wait()
-        print_id('home complete')
 
     # get methods
     def run_get(self):
@@ -157,9 +176,9 @@ class example_application:
             self.arm.move_jp(goal).wait()
 
     # direct cartesian control example
-    def run_servo_cp(self):
-        print_id('starting servo_cp')
-        self.prepare_cartesian()
+    def run_servo_cp(self, offset_x, offset_y, offset_z):
+        # print_id('starting servo_cp')
+        # self.prepare_cartesian()
 
         # create a new goal starting with current position
         initial_cartesian_position = PyKDL.Frame()
@@ -169,32 +188,50 @@ class example_application:
         goal.p = self.arm.setpoint_cp().p
         goal.M = self.arm.setpoint_cp().M
         # motion parameters
-        amplitude = 0.02 # 4 cm total
-        duration = 5  # 5 seconds
-        samples = duration / self.expected_interval
-        start = rospy.Time.now()
-        for i in xrange(int(samples)):
-            goal.p[0] =  initial_cartesian_position.p[0] + amplitude *  (1.0 - math.cos(i * math.radians(360.0) / samples))
-            goal.p[1] =  initial_cartesian_position.p[1] + amplitude *  (1.0 - math.cos(i * math.radians(360.0) / samples))
-            self.arm.servo_cp(goal)
+        # amplitude = 0.005 # 4 cm total
+        # duration = 1  # 5 seconds
+        # samples = duration / self.expected_interval
+
+        # print('start',initial_cartesian_position)
+
+        # start = rospy.Time.now()
+        # for i in xrange(int(samples)):
+        goal.p[0] =  initial_cartesian_position.p[0] + offset_y #*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))
+        goal.p[1] =  initial_cartesian_position.p[1] + offset_x #*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))
+        goal.p[2] =  initial_cartesian_position.p[2] + offset_z #*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))
+            # if i == 180:
+            #     print_id("target(step{180}):")
+            #     print_id("rotation: {}".format(goal.M))
+            #     print_id("translation {}:".format(goal.p))
+
+            
+            
+        self.arm.servo_cp(goal)
             # check error on kinematics, compare to desired on arm.
             # to test tracking error we would compare to
             # current_position
-            setpoint_cp = self.arm.setpoint_cp()
-            errorX = goal.p[0] - setpoint_cp.p[0]
-            errorY = goal.p[1] - setpoint_cp.p[1]
-            errorZ = goal.p[2] - setpoint_cp.p[2]
-            error = math.sqrt(errorX * errorX + errorY * errorY + errorZ * errorZ)
-            if error > 0.002: # 2 mm
-                print_id('Inverse kinematic error in position [%i]: %s (might be due to latency)' % (i, error))
-            rospy.sleep(self.expected_interval)
-        actual_duration = rospy.Time.now() - start
-        print_id('servo_cp complete in %2.2f seconds (expected %2.2f)' % (actual_duration.to_sec(), duration))
+        # setpoint_cp = self.arm.setpoint_cp()
+        # errorX = goal.p[0] - setpoint_cp.p[0]
+        # errorY = goal.p[1] - setpoint_cp.p[1]
+        # errorZ = goal.p[2] - setpoint_cp.p[2]
+        # error = math.sqrt(errorX * errorX + errorY * errorY + errorZ * errorZ)
+        # if error > 0.002: # 2 mm
+        #     print_id('Inverse kinematic error in position [%i]: %s (might be due to latency)' % (i, error))
+        # rospy.sleep(self.expected_interval)
+        # actual_duration = rospy.Time.now() - start
+        # print_id('servo_cp complete in %2.2f seconds (expected %2.2f)' % (actual_duration.to_sec(), duration))
+
+        # print_id('')
+        # after_cartesian_position = PyKDL.Frame()
+        # after_cartesian_position.p = self.arm.setpoint_cp().p
+        # after_cartesian_position.M = self.arm.setpoint_cp().M
+        # print('after',after_cartesian_position)
+        # print_id('move_cp complete')
 
     # direct cartesian control example
     def run_move_cp(self, offset_x, offset_y, offset_z):
         print_id('starting move_cp')
-        self.prepare_cartesian()
+        # self.prepare_cartesian() 
 
         # create a new goal starting with current position
         initial_cartesian_position = PyKDL.Frame()
@@ -212,7 +249,9 @@ class example_application:
         goal.p[1] =  initial_cartesian_position.p[1] + offset_x
         goal.p[2] =  initial_cartesian_position.p[2] + offset_z
 
-        self.arm.move_cp(goal).wait()
+        # print('start',initial_cartesian_position)
+
+        # self.arm.move_cp(goal).wait() ###################################################################
         # # second motion
         # goal.p[0] =  initial_cartesian_position.p[0] + amplitude
         # goal.p[1] =  initial_cartesian_position.p[1]
@@ -233,7 +272,43 @@ class example_application:
         # goal.p[0] =  initial_cartesian_position.p[0]
         # goal.p[1] =  initial_cartesian_position.p[1]
         # self.arm.move_cp(goal).wait()
-        print_id('move_cp complete')
+
+        # print_id('')
+        # after_cartesian_position = PyKDL.Frame()
+        # after_cartesian_position.p = self.arm.setpoint_cp().p
+        # after_cartesian_position.M = self.arm.setpoint_cp().M
+        # print('after',after_cartesian_position)
+        # # print('Cartesian Offset', (after_cartesian_position - initial_cartesian_position))
+        # print_id('move_cp complete')
+
+
+    def run_move_cp_rotation(self, offset_x, offset_y, offset_z, rotation_offset):
+        print_id('starting move_cp')
+        self.prepare_cartesian()
+
+        # create a new goal starting with current position
+        initial_cartesian_position = PyKDL.Frame()
+        initial_cartesian_position.p = self.arm.setpoint_cp().p
+        initial_cartesian_position.M = self.arm.setpoint_cp().M
+        goal = PyKDL.Frame()
+        goal.p = self.arm.setpoint_cp().p
+        goal.M = self.arm.setpoint_cp().M
+
+        # first motion
+        goal.p[0] =  initial_cartesian_position.p[0] + offset_y
+        goal.p[1] =  initial_cartesian_position.p[1] + offset_x
+        goal.p[2] =  initial_cartesian_position.p[2] + offset_z
+
+        rotation_matrix_offset = PyKDL.Rotation(
+            rotation_offset[0, 0], rotation_offset[0, 1], rotation_offset[0, 2],
+            rotation_offset[1, 0], rotation_offset[1, 1], rotation_offset[1, 2],
+            rotation_offset[2, 0], rotation_offset[2, 1], rotation_offset[2, 2],
+        )
+
+        goal.M = initial_cartesian_position.M * rotation_matrix_offset
+
+        self.arm.move_cp(goal).wait()
+        
 
     # main method
     def run(self):
@@ -245,54 +320,92 @@ class example_application:
         self.run_move_cp()
 
 if __name__ == '__main__':
-    
-    ##################     Create a TCP/IP socket   ####################
+
+    ral = crtk.ral('dvrk_arm_test')
+    application = example_application()
+    application.configure(ral,'PSM1',0.01)
+    application.home()
+
+
+    # ##################     Create a TCP/IP socket   ####################
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Connect the socket to the server's address and port
-    server_address = ('172.30.28.152', 10000)
-    print >>sys.stderr, 'connecting to %s port %s' % server_address
+    server_address = ('172.26.40.196',  12000)
+    print(f'connecting to {server_address[0]} port {server_address[1]}', file=sys.stderr)
     sock.connect(server_address)
 
+    steps = 20
+    buffer = ""
+
+    # try:
+    #     while True:
+    #         data = sock.recv(1024)
+    #         if data:
+    #             buffer += data
+    #             while  '\n' in buffer:
+    #             # Split received data by commas and convert to floats
+    #                 line, buffer = buffer.split('\n', 1)
+    #                 displacement = [float(value) for value in data.decode('utf-8').split(',')]
+
+    #                 offset_x = displacement[0] / steps
+    #                 offset_y = displacement[1] / steps
+    #                 offset_z = displacement[2] / steps
+
+    #                 for i in range(0, steps):
+    #                     application.run_servo_cp(offset_x, offset_y, offset_z)
+    #                     time.sleep(0.05)
+
+    #                 print(f'received displacement: {displacement}', file=sys.stderr)
+    #         else:
+    #             print('no more data from server', file=sys.stderr)
     try:
+        while True:
+            data = sock.recv(1024)
+            if not data:
+                print("Disconnection", file=sys.stderr)
+                break
 
-        data = sock.recv(32)
-        if data:
-            # Split received data by commas and convert to integers
-            displacement = [float(value) for value in data.decode('utf-8').split(',')]
-            print >>sys.stderr, 'received displacement:', displacement
-        else:
-            print >>sys.stderr, 'no more data from server'
-        
+            buffer += data.decode('utf-8')
+            while '\n' in buffer:
+                line, buffer = buffer.split('\n', 1)
+                try:
+                    displacement = [float(value) for value in line.split(',')]
+                except ValueError:
+                    print(f"Error: {line}", file=sys.stderr)
+                    continue
 
+                offset_x = displacement[0] / steps
+                offset_y = displacement[1] / steps
+                offset_z = displacement[2] / steps
+
+                for i in range(steps):
+                    application.run_servo_cp(offset_x, offset_y, offset_z)
+                    time.sleep(0.025)
+
+                print(f"Received offset: {displacement}", file=sys.stderr)
+    except socket.error as e:
+        print(f"wrong: {e}", file=sys.stderr)
     finally:
-        print >>sys.stderr, 'closing socket'
+        print("Close", file=sys.stderr)
         sock.close()
+
+
+    # finally:
+    #     print('closing socket', file=sys.stderr)
+    #     sock.close()
+
+ 
+
+    # offset_x = 0.0
+    # offset_y = -0.0015
+    # offset_z = 0.
+
+
+    # # returned_frame_psm1 = application.run_move_cp(offset_x, offset_y, offset_z)
+    # for i in range(1, 20):
+    #     application.run_servo_cp(offset_x, offset_y, offset_z)
+    #     time.sleep(0.1)
+
+
     
-    ###########################################################################################
-    # ros init node so we can use default ros arguments (e.g. __ns:= for namespace)
-    rospy.init_node('dvrk_arm_test', anonymous=True)
-    # strip ros arguments
-    argv = rospy.myargv(argv=sys.argv)
-
-    # # parse arguments
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument('-a', '--arm', type=str, required=True,
-    #                     choices=['ECM', 'MTML', 'MTMR', 'PSM1', 'PSM2', 'PSM3'],
-    #                     help = 'arm name corresponding to ROS topics without namespace.  Use __ns:= to specify the namespace')
-    # parser.add_argument('-i', '--interval', type=float, default=0.01,
-    #                     help = 'expected interval in seconds between messages sent by the device')
-    # args = parser.parse_args(argv[1:]) # skip argv[0], script name
-
-    
-    # application = example_application()
-    # application.configure(args.arm, args.interval)
-
-    application = example_application()
-    application.configure('PSM1', 0.014)
-    # application.run()
-
-    offset_x = displacement[0]
-    offset_y = displacement[1] # 5mm
-    offset_z = displacement[2]
-    returned_frame_psm1 = application.run_move_cp(offset_x, offset_y, offset_z)
