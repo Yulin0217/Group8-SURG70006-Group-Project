@@ -308,7 +308,56 @@ class example_application:
         goal.M = initial_cartesian_position.M * rotation_matrix_offset
 
         self.arm.move_cp(goal).wait()
+    
+    def run_servo_cp_steps(self, offset_x, offset_y, offset_z, steps, dt):
+        print_id('starting servo_cp')
+        # self.prepare_cartesian()
+        for i in range(1, steps):
+        # create a new goal starting with current position
+            initial_cartesian_position = PyKDL.Frame()
+            initial_cartesian_position.p = self.arm.setpoint_cp().p
+            initial_cartesian_position.M = self.arm.setpoint_cp().M
+            goal = PyKDL.Frame()
+            goal.p = self.arm.setpoint_cp().p
+            goal.M = self.arm.setpoint_cp().M
+
+            # print('start',initial_cartesian_position)
+
         
+            goal.p[0] =  initial_cartesian_position.p[0] + offset_y / steps#*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))
+            goal.p[1] =  initial_cartesian_position.p[1] + offset_x / steps#*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))
+            goal.p[2] =  initial_cartesian_position.p[2] + offset_z / steps#*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))       
+            self.arm.servo_cp(goal)     
+            time.sleep(dt)
+
+        # # self.arm.servo_cp(goal)
+        # print_id('')
+        # after_cartesian_position = PyKDL.Frame()
+        # after_cartesian_position.p = self.arm.setpoint_cp().p
+        # after_cartesian_position.M = self.arm.setpoint_cp().M
+        # print('after',after_cartesian_position)
+        # print_id('move_cp complete')
+        
+    def run_move_cp_steps(self, offset_x, offset_y, offset_z, steps, dt):
+        print_id('starting servo_cp')
+        # self.prepare_cartesian()
+        for i in range(1, steps):
+            # create a new goal starting with current position
+            initial_cartesian_position = PyKDL.Frame()
+            initial_cartesian_position.p = self.arm.setpoint_cp().p
+            initial_cartesian_position.M = self.arm.setpoint_cp().M
+            goal = PyKDL.Frame()
+            goal.p = self.arm.setpoint_cp().p
+            goal.M = self.arm.setpoint_cp().M
+
+            print('start',initial_cartesian_position)
+
+            goal.p[0] =  initial_cartesian_position.p[0] + offset_y / steps#*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))
+            goal.p[1] =  initial_cartesian_position.p[1] + offset_x / steps#*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))
+            goal.p[2] =  initial_cartesian_position.p[2] + offset_z / steps#*  (1.0 - math.cos(i/2 * math.radians(360.0) / samples))       
+            self.arm.move_cp(goal)     
+            time.sleep(dt)
+
 
     # main method
     def run(self):
@@ -323,7 +372,7 @@ if __name__ == '__main__':
 
     ral = crtk.ral('dvrk_arm_test')
     application = example_application()
-    application.configure(ral,'PSM1',0.01)
+    application.configure(ral,'PSM2',0.01)
     application.home()
 
 
@@ -331,70 +380,80 @@ if __name__ == '__main__':
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Connect the socket to the server's address and port
-    server_address = ('172.26.40.196',  12000)
+    server_address = ('172.26.143.151', 12000)
     print(f'connecting to {server_address[0]} port {server_address[1]}', file=sys.stderr)
     sock.connect(server_address)
 
-    steps = 20
+    steps = 50
+    dt = 0.1
     buffer = ""
 
-    # try:
-    #     while True:
-    #         data = sock.recv(1024)
-    #         if data:
-    #             buffer += data
-    #             while  '\n' in buffer:
-    #             # Split received data by commas and convert to floats
-    #                 line, buffer = buffer.split('\n', 1)
-    #                 displacement = [float(value) for value in data.decode('utf-8').split(',')]
-
-    #                 offset_x = displacement[0] / steps
-    #                 offset_y = displacement[1] / steps
-    #                 offset_z = displacement[2] / steps
-
-    #                 for i in range(0, steps):
-    #                     application.run_servo_cp(offset_x, offset_y, offset_z)
-    #                     time.sleep(0.05)
-
-    #                 print(f'received displacement: {displacement}', file=sys.stderr)
-    #         else:
-    #             print('no more data from server', file=sys.stderr)
     try:
+        # while True:
+        #     data = sock.recv(1024)
+        #     if not data:
+        #         print("Disconnection", file=sys.stderr)
+        #         break
+
+        #     buffer += data.decode('utf-8')
+        #     while '\n' in buffer:
+        #         line, buffer = buffer.split('\n', 1)
+        #         try:
+        #             displacement = [float(value) for value in line.split(',')]
+        #         except ValueError:
+        #             print(f"Error: {line}", file=sys.stderr)
+        #             continue
+
+        #         offset_x = displacement[0]
+        #         offset_y = displacement[1]
+        #         offset_z = displacement[2]
+
+        #         # for i in range(steps):
+        #         application.run_servo_cp_steps(offset_x, offset_y, offset_z, steps, dt)
+        #             # time.sleep(0.025)
+
+        #         print(f"Received offset: {displacement}", file=sys.stderr)
         while True:
-            data = sock.recv(1024)
+            # 从服务器接收数据（缓冲区大小设置为 4096 字节）
+            data = sock.recv(4096)
+
             if not data:
-                print("Disconnection", file=sys.stderr)
+                print("No data received. Closing connection.")
                 break
 
-            buffer += data.decode('utf-8')
-            while '\n' in buffer:
-                line, buffer = buffer.split('\n', 1)
-                try:
-                    displacement = [float(value) for value in line.split(',')]
-                except ValueError:
-                    print(f"Error: {line}", file=sys.stderr)
-                    continue
+            # 解码接收的数据
+            received_str = data.decode('utf-8')
+            print(f"Raw received data: {received_str}")
 
-                offset_x = displacement[0] / steps
-                offset_y = displacement[1] / steps
-                offset_z = displacement[2] / steps
+            # 解析数据为 NumPy 数组
+            try:
+                # 将字符串转换为 Python 列表
+                translation_list = eval(received_str)
 
-                for i in range(steps):
-                    application.run_servo_cp(offset_x, offset_y, offset_z)
-                    time.sleep(0.025)
+                # 将列表转换为 2D NumPy 矩阵，每行包含一个平移向量
+                translation_matrix = numpy.array(translation_list).reshape(-1, 3)
+                print(f"Translation Matrix:\n{translation_matrix}")
 
-                print(f"Received offset: {displacement}", file=sys.stderr)
+                # 遍历每个位移向量并控制 dVRK
+                for displacement in translation_matrix:
+                    # 分解位移向量
+                    offset_x = displacement[0] / 5
+                    offset_y = displacement[1] / 5
+                    offset_z = displacement[2] / 5
+
+                    # for i in range(steps):
+                    application.run_move_cp_steps(offset_x, offset_y, offset_z, steps, dt)
+
+                    print(f"Received offset: {displacement}", file=sys.stderr)
+            except Exception as e:
+                print(f"Error parsing received data: {e}")
+                continue
+
     except socket.error as e:
         print(f"wrong: {e}", file=sys.stderr)
     finally:
         print("Close", file=sys.stderr)
         sock.close()
-
-
-    # finally:
-    #     print('closing socket', file=sys.stderr)
-    #     sock.close()
-
  
 
     # offset_x = 0.0
