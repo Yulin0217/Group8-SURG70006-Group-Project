@@ -1,0 +1,15 @@
+### checkborder size: 7.64 mm
+cam:
+   camera_matrix:
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 812.2798, 0, 565.4246,
+            0., 809.9507 , 287.3965,
+            0., 0., 1. ]
+
+   dist_coeff:
+      rows: 1
+      cols: 4
+      dt: d
+      data: [0.3507, 0.5291,0,0,0]
